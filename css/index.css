@@ -86,6 +86,8 @@
 .subjectSelection > summary::before {
     content: "expand_more";
     font-family: 'Material Symbols Rounded';
+    font-variation-settings: "FILL" 1, "wght" 300, "GRAD" 0, "opsz" 24;
+    font-synthesis: none;
     display: inline-block;
     font-size: 2rem;
     opacity: 0;
@@ -95,6 +97,8 @@
 .subjectSelection > summary::after {
     content: "expand_more";
     font-family: 'Material Symbols Rounded';
+    font-variation-settings: "FILL" 1, "wght" 300, "GRAD" 0, "opsz" 24;
+    font-synthesis: none;
     display: inline-block;
     font-size: 2rem;
     transition: transform 0.3s cubic-bezier(0, 0.55, 0.45, 1);

@@ -35,7 +35,8 @@
     'FILL' 1,
     'wght' 300,
     'GRAD' 0,
-    'opsz' 24
+    'opsz' 24;
+    font-synthesis: none;
 }
 
 .cal-sans-regular {
