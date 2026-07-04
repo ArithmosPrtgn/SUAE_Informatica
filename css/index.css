@@ -1,0 +1,132 @@
+#mainArea {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    margin: 3vh 0;
+}
+
+.subjectSelection {
+    border: 3px solid var(--accentColor);
+    border-radius: 25px;
+    width: 90%;
+    padding: 30px 20px;
+    margin: 10px 0;
+    font-weight: 500;
+    font-size: 1rem;
+    overflow: visible;
+}
+
+.linkMe {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--surfaceColor);
+    width: max(85%, 100%);
+    height: 5vh;
+    min-height: 120px;
+    border: 2px solid var(--invertedNonAccentColor);
+    border-radius: 30px;
+    padding: 30px 10px;
+    flex: 0 1 auto;
+}
+
+.linkMe h3 {
+    margin: 0 0 0 5px;
+}
+
+.linkMe:hover {
+    box-shadow: 0px 0px 0px 5px var(--invertedNonAccentColor);
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.linkMe:active {
+    box-shadow: 0 0 0 17px var(--invertedNonAccentColor);
+    transform: scale(0.9);
+    transition: 0.3s;
+}
+
+.linkMe img, .linkMe svg {
+    width: clamp(48px, 6vw, 80px);
+    height: clamp(48px, 6vw, 80px);
+}
+
+.linkMe svg {
+    display: block;
+    color: var(--invertedNonAccentColor);
+    transition: 0.3s;
+}
+
+.subjectSelection .buttonRow {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    width: 100%;
+    gap: 20px;
+}
+
+.imgChangeColor {
+    color: var(--invertedNonAccentColor);
+    transition: 0.4s;
+}
+
+.subjectSelection > summary::-webkit-details-marker { display: none; }
+
+.subjectSelection > summary {
+    font-family: "Cal Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;  
+}
+
+.subjectSelection > summary::before {
+    content: "expand_more";
+    font-family: 'Material Symbols Rounded';
+    display: inline-block;
+    font-size: 2rem;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.subjectSelection > summary::after {
+    content: "expand_more";
+    font-family: 'Material Symbols Rounded';
+    display: inline-block;
+    font-size: 2rem;
+    transition: transform 0.3s cubic-bezier(0, 0.55, 0.45, 1);
+}
+
+.subjectSelection[open] > summary::after {
+    transform: rotate(180deg);
+}
+
+.details-body {
+    padding: 30px;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.35s cubic-bezier(0, 0.55, 0.45, 1), padding 0.35s cubic-bezier(0, 0.55, 0.45, 1);;
+}
+
+.details-body > * {
+    min-height: 0;
+}
+
+details[open] .details-body {
+    grid-template-rows: 1fr;
+}
+
+details.is-closing .details-body {
+    padding: 0 30px;
+    grid-template-rows: 0fr !important;
+}
+
+@media screen and (max-width: 340px) {
+    .linkMe {
+        width: 80%;
+    }
+}

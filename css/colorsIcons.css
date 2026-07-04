@@ -1,0 +1,58 @@
+:root {
+    --accentColor: #ff4848;
+        --altAccentColor: #960101;
+    --infoColor: #6d94ff;
+        --altInfoColor: #2148b3;
+        --surfaceInfoColor: #afc5ff;
+    --nonAccentColor: #fafafa;
+        --invertedNonAccentColor: #050505;
+    --yesColor: #00aa00;
+        --altYesColor: #005e00;
+    --noColor: #f34646;
+        --altNoColor: #8a0000;
+    --surfaceColor: #f0eded; 
+}
+
+:root .L {
+    --altAccentColor: #ff4848;
+        --accentColor: #960101;
+    --altInfoColor: #6d94ff;
+        --infoColor: #2148b3;
+        --surfaceInfoColor: #1f2b4d;
+    --invertedNonAccentColor: #fafafa;
+        --nonAccentColor: #050505;
+    --altYesColor: #00aa00;
+        --yesColor: #005e00;
+    --altNoColor: #f34646;
+        --noColor: #8a0000;
+    --surfaceColor: #1a1a1a;
+}
+
+.material-symbols-rounded {
+    font-family: 'Material Symbols Rounded' !important;
+    color: var(--nonAccentColor);
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 300,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+.cal-sans-regular {
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.google-sans-flex-regular {
+    font-family: "Google Sans Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "wdth" 87.5,
+        "GRAD" 0,
+        "ROND" 33;
+}

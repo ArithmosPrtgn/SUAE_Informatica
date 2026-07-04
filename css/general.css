@@ -1,0 +1,251 @@
+h1, h2, h3, h4, h5, h6,label, input, button {
+    color: var(--invertedNonAccentColor);
+}
+
+h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin: 5px 0 0 0;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+h2 {
+    margin: 5px 0 0 0;
+    font-size: clamp(1.5rem, 3vw, 2rem); 
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: clamp(1.1rem, 1.8vw, 1.5rem);
+    line-height: 1.25;
+    font-weight: 600;
+    margin: 0;
+}
+
+h4 {
+    font-size: clamp(0.8rem, 1.3vw, 1.1rem);
+    line-height: 1.3;
+    font-weight: 500;
+    margin: 0;
+}
+
+::-webkit-scrollbar{
+    width: 12px; 
+}
+
+::-webkit-scrollbar-track{
+    background: var(--altAccentColor);
+
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--accentColor); 
+    border-radius: 0 10px 10px 0;
+    border: 3px solid var(--nonAccentColor); 
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: var(--nonAccentColor); 
+}
+
+
+select,
+::picker(select) {
+  appearance: base-select;
+}
+
+select {
+    display: flex;
+    position: relative;
+    border: 2px solid var(--nonAccentColor);
+    background: var(--altAccentColor);
+    color: var(--nonAccentColor);
+    font-family: inherit;
+    padding: 10px;
+    transition: 0.4s;
+}
+
+option:checked {
+  font-weight: bold;
+}
+
+option::checkmark {
+  order: 1;
+  margin-left: auto;
+  content: "V";
+}
+
+option {
+    border: 2px solid var(--nonAccentColor);
+    background: var(--accentColor);
+    color: var(--nonAccentColor);
+    font-family: inherit;
+}
+
+option:first-of-type {
+  border-radius: 8px 8px 0 0;
+}
+
+option:last-of-type {
+  border-radius: 0 0 8px 8px;
+}
+
+::picker(select) {
+  border-radius: 8px;
+}
+
+option:not(option:last-of-type) {
+  border-bottom: none;
+}
+
+.dropdownArea {
+    width: auto;
+    max-width: max-content;
+    max-height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    gap: 20px !important;
+}
+
+.inlineContentFar {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+body, html {
+    margin: 0;
+    background: var(--nonAccentColor);
+    color: var(--invertedNonAccentColor);
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root {
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+*, *::before, *::after {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, fill 0.3s ease;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    font-family: inherit;
+    background: transparent;
+    border: 2px solid var(--invertedNonAccentColor);
+    color: var(--invertedNonAccentColor);
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+a { color: var(--invertedNonAccentColor); }
+
+button:hover {
+    box-shadow: 0px 0px 0px 5px var(--invertedNonAccentColor);
+    transform: scale(0.9);
+    transition: 0.3s;
+}
+
+button:active {
+    box-shadow: 0 0 0 15px var(--invertedNonAccentColor);
+    transform: translateY(0) scale(0.75);
+    transition: 0.3s;
+}
+
+.iconM {
+    margin-right: 5px;
+    color: var(--invertedNonAccentColor);
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    border-radius: 10px 10px 0 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: var(--accentColor);
+}
+
+/* Callouts  */
+
+.calloutBox {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    text-align: left;
+    padding: 20px;
+    border: 5px solid var(--accentColor);
+    border-left: 20px solid var(--altAccentColor);
+    border-radius: 20px;
+    background-color: var(--surfaceColor) !important;
+    width: 90%;
+    max-width: 50vw;
+    height: auto;
+    transition: all ease 0.3s;
+    position: relative;
+}
+
+.foregroundCallOutIcon, .calloutBox h3 { margin: 0 0 0 10px; }
+
+.foregroundCallOutIcon { 
+    font-size: 2rem !important;
+    color: var(--invertedNonAccentColor);
+}
+
+.calloutBox > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    padding: 10px;
+    margin: -20px -20px 0px -20px;
+}
+
+.calloutBox h4 { margin: 10px 0 -5px 0;}
+
+.calloutBox:hover, .calloutBox:focus {
+    border-width: 3px;
+    transform: scale(1.05);
+}
+
+.info, .info > div {
+    border-color: var(--altInfoColor) !important;
+    background-color: var(--surfaceInfoColor);
+}
+
+.backgroundCallOutIcon {
+    color: var(--invertedNonAccentColor);
+    transform: rotate(-30deg);
+        transform-origin: center;
+    position: absolute;
+        right: 10%;
+        bottom: 0%;
+    font-size: 7rem !important;
+}

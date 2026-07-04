@@ -1,0 +1,25 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" width="800" height="789.4737" fill="none" viewBox="0 0 800 789.4737">
+  <rect width="536.8421" height="263.1579" x="263.1579" y="526.3158" fill="#969dff" rx="131.5789"/>
+  <rect width="263.1579" height="263.1579" x="0" y="526.3158" fill="#b8c0ff" rx="131.5789"/>
+  <rect width="263.1579" height="263.1579" x="0" y="263.1579" fill="#5746e3" rx="131.5789"/>
+  <rect width="536.8421" height="263.1579" x="263.1579" y="263.1579" fill="#5746e3" rx="131.5789"/>
+  <mask id="a" width="102" height="50" x="70" y="21" maskUnits="userSpaceOnUse">
+    <rect width="102" height="50" x="70" y="21" fill="#fff" rx="25"/>
+  </mask>
+  <g mask="url(#a)" transform="matrix(5.2631579,0,0,5.2631579,-105.26316,-110.52632)">
+    <rect width="102" height="50" x="70" y="21" fill="#7372fe" rx="25"/>
+    <g filter="url(#b)">
+      <circle cx="56" cy="46" r="36" fill="#64afff"/>
+    </g>
+  </g>
+  <rect width="263.1579" height="263.1579" x="0" y="0" fill="#7372fe" rx="131.5789"/>
+  <path stroke="#ffffff" stroke-linecap="round" stroke-width="63.6" d="M394.7368 131.579h273.6843"/>
+  <circle cx="131.5789" cy="131.5789" r="63.1579" fill="#ffffff"/>
+  <defs>
+    <filter id="b" width="111.47" height="111.47" x=".27" y="-9.74" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" mode="normal"/>
+      <feGaussianBlur result="effect1_foregroundBlur_37586_9489" stdDeviation="9.87"/>
+    </filter>
+  </defs>
+</svg>
