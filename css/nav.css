@@ -53,7 +53,7 @@ nav {
     font-weight: 500;
 }
 
-#leftSide {
+#leftSide, .rightSide {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -71,7 +71,7 @@ nav {
     border: 2px solid var(--invertedNonAccentColor);
     color: var(--invertedNonAccentColor);
     border-radius: 20px;
-    margin: 0 0 0 25px;
+    margin: 0 0 0 15px;
     padding: 0px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -142,7 +142,6 @@ body.L .icoAniTheme { font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "
         width: 100%;
         margin: 5px;
     }
-
 
     #theme {
         margin-left: 0;
