@@ -351,3 +351,36 @@ footer {
 .toggleContent .iconM { transition: transform 0.3s ease; }
 
 .calloutBox.collapsed .toggleContent .iconM { transform: rotate(-180deg); }
+
+/*Códigos*/
+
+.codeBlock {
+    border: 5px solid var(--invertedNonAccentColor);
+    border-left: 20px solid;
+    background-color: var(--invertedSurfaceColor);
+    border-radius: 15px;
+    margin: 10px 0;
+    padding: 20px;
+    width: 90%;
+    overflow: hidden;
+    max-width: 70vw;
+}
+
+.codeBlock > pre {
+    margin: 0;
+    padding: 20px;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--nonAccentColor);
+    overflow-x: auto;
+}
+
+.cBHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--surfaceColor);
+    margin: -20px -20px 0 -20px;
+}

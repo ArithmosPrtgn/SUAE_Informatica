@@ -38,6 +38,7 @@
         --invertedNonAccentColor: #050505;
 
     --surfaceColor: #f0eded; 
+    --invertedSurfaceColor: #1a1a1a;
 }
 
 :root .L {
@@ -80,6 +81,7 @@
         --nonAccentColor: #050505;
 
     --surfaceColor: #1a1a1a;
+    --invertedSurfaceColor: #f0eded;
 }
 
 .material-symbols-rounded {
