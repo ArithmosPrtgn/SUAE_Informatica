@@ -1,13 +1,3 @@
-#mainArea {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    width: 90vw;
-    margin: 3vh 0;
-}
-
 .subjectSelection {
     border: 3px solid var(--accentColor);
     border-radius: 25px;

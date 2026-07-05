@@ -30,6 +30,23 @@ h4 {
     margin: 0;
 }
 
+p {
+    font-size: clamp(0.875rem, 1.2vw, 0.95rem);
+    line-height: 1.5;
+    max-width: 75vw;
+    text-align: left;
+}
+
+#mainArea {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    margin: 3vh 0;
+}
+
 ::-webkit-scrollbar{
     width: 12px; 
 }
@@ -393,6 +410,7 @@ footer {
 }
 
 .codeBlock pre code.hljs {
+    text-align: left;
     background: transparent !important;
     padding: 0; /* Optional: removes default padding if you already added it to the <pre> */
 }
