@@ -76,11 +76,6 @@ nav {
     overflow: hidden;
 }
 
-#theme,
-#theme * {
-    user-select: none;
-}
-
 #theme:hover {
     outline: none;
     transform: scale(0.9);
@@ -93,7 +88,7 @@ nav {
     box-shadow: 0 0 0 9px var(--invertedNonAccentColor);
 }
 
-.icoAniTheme { display:inline-block; color:var(--invertedNonAccentColor); cursor:pointer; font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 200, "opsz" 48; font-synthesis: none; }
+.icoAniTheme { display:inline-block; color:var(--invertedNonAccentColor); cursor:pointer; font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 200, "opsz" 48; }
 .icoAniTheme {
     display: inline-flex;
     align-items: center;
@@ -145,9 +140,13 @@ body.L .icoAniTheme { font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "
         box-sizing: border-box;
     }
 
-    #titleNav {
-        display: none;
+   #titleNav {
+        display: flex;            
+        justify-content: center;   
+        align-items: center;       
+        width: 100%;
     }
+
 
     #theme {
         margin-left: 0;
