@@ -102,7 +102,6 @@ nav {
         transform: translateY(0) scale(1) rotate(0deg);
         opacity: 1;
     }
-
     to {
         transform: translateY(120%) scale(0.75) rotate(-45deg);
         opacity: 0;
@@ -114,20 +113,14 @@ nav {
         transform: translateY(120%) scale(0.75) rotate(45deg);
         opacity: 0;
     }
-
     to {
         transform: translateY(0) scale(1) rotate(0deg);
         opacity: 1;
     }
 }
 
-.icoAniTheme.is-leaving {
-    animation: themeIconSlideOut 190ms cubic-bezier(0.7, 0, 0.84, 0) forwards;
-}
-
-.icoAniTheme.is-entering {
-    animation: themeIconSlideIn 300ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
-}
+.icoAniTheme.is-leaving { animation: themeIconSlideOut 190ms cubic-bezier(0.7, 0, 0.84, 0) forwards; }
+.icoAniTheme.is-entering { animation: themeIconSlideIn 300ms cubic-bezier(0.16, 1, 0.3, 1) forwards; }
 
 body.L .icoAniTheme { font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48; }
 #themeIco { font-size: 2em; }
