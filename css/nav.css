@@ -27,6 +27,8 @@
     width: 100vw;
 }
 
+#NavLoL { min-height: 13vh; }
+
 nav {
     display: flex;
     flex-direction: row;

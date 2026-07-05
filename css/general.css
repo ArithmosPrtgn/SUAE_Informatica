@@ -200,6 +200,7 @@ footer {
     padding: 20px 0;
     background-color: var(--accentColor);
 }
+#footerLoL { min-height: 309px; }
 
 /* Callouts  */
 
