@@ -3,6 +3,7 @@ let hamburgerMenuRoot = null;
 let hamburgerMenuLoading = false;
 
 const themeToggleHelperUrl = '/js/darkMode/themeToggle.js';
+const saveAsHelperUrl = '/js/saveAs/index.js';
 
 function ensureThemeToggleHelper() {
 	if (window.SUAEThemeToggle) {
@@ -20,6 +21,24 @@ function ensureThemeToggleHelper() {
 	}
 
 	return window.__SUAEThemeTogglePromise;
+}
+
+function ensureSaveAsHelper() {
+	if (window.SUAESaveAs) {
+		return Promise.resolve(window.SUAESaveAs);
+	}
+
+	if (!window.__SUAESaveAsPromise) {
+		window.__SUAESaveAsPromise = new Promise((resolve, reject) => {
+			const script = document.createElement('script');
+			script.src = saveAsHelperUrl;
+			script.onload = () => resolve(window.SUAESaveAs);
+			script.onerror = () => reject(new Error('Save-as helper failed to load'));
+			document.head.append(script);
+		});
+	}
+
+	return window.__SUAESaveAsPromise;
 }
 
 function closeHamburgerMenu() {
@@ -52,6 +71,16 @@ async function initHamburgerTheme() {
 
 	const themeToggle = await ensureThemeToggleHelper();
 	themeToggle.attach(button);
+}
+
+async function initHamburgerSaveAs() {
+	const button = hamburgerMenuRoot?.querySelector('#saveOffline');
+	if (!button || button.dataset.saveAsBound === 'true') {
+		return;
+	}
+
+	const saveAs = await ensureSaveAsHelper();
+	saveAs.attach(button);
 }
 
 async function openHamburgerMenu() {
@@ -104,6 +133,7 @@ async function openHamburgerMenu() {
 		}
 
 		initHamburgerTheme();
+		initHamburgerSaveAs();
 	} catch (error) {
 		console.error('Erro ao abrir hamburguer menu:', error);
 	} finally {
