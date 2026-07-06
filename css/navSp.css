@@ -43,7 +43,9 @@
 
 #NavLoL { min-height: 18vh; }
 
-#hamburguerB, #Retro {
+#magnify, #HBIco { font-size: 2em; color: var(--invertedNonAccentColor); }
+
+#hamburguerB {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,7 +110,6 @@
 .icoAniHB.is-entering { animation: HBIconSlideIn 300ms cubic-bezier(0.16, 1, 0.3, 1) forwards; }
 
 body.L .icoAniHB { font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48; }
-#HBIco, #Rico, #magnify { font-size: 2em; color: var(--invertedNonAccentColor); }
 
 #subtitleArea:only-child {
     padding: 10px;
@@ -130,12 +131,11 @@ body.L .icoAniHB { font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "ops
         margin: 5px;
     }
 
-    #hamburgerB, #Retro {
+    #hamburgerB {
         margin-left: 5px;
         flex-shrink: 0;
     }
 
-    #Retro { display: none;}
     #subtitleArea { flex-direction: column; height: 12vh;}
 
     #search {font-size: 1em;}

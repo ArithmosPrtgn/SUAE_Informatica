@@ -1,0 +1,48 @@
+#hideContent {
+    position: fixed;
+        top: 0;
+        left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 20;
+    background-color: #000000a8;
+}
+
+.HBButtons {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 20px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#settings {
+    display: flex;
+    position: fixed;
+        right: 0;
+        top: 0;
+    flex-direction: column;
+    padding: 1vh 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--accentColor);
+    height: 99vh;
+    z-index: 21;
+}
+
+#navigationArticleList {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    background-color: var(--altAccentColor);
+    color: var(--nonAccentColor);
+    border-radius: 20px;
+    text-align: center;
+}
+
+#navigationArticleList > li {
+    padding: 20px 0;
+    border-radius: 20px;
+    border-bottom: 2px solid var(--nonAccentColor);
+}

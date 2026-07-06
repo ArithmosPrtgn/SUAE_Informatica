@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/colorsIcons.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/navSp.css">
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="/css/hamburguerMenu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="/resources/favicon.svg" />
+    <link rel="stylesheet" rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" />
+    <link rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <title>SUAE</title>
+</head>
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            hljs.highlightAll();
+        });
+    </script>
+    <script type="text/javascript" src="/js/darkMode/index.js" defer></script>
+    <script src="/js/anim/detailsOpenClose.js" defer></script>
+
+    <div id="hideContent"></div>
+        <div id="settings" class="cal-sans-regular">
+            <div id="upperContent">
+            <h1>MENU</h1>
+            <h4>{{currentArticle}} / {{currentArticleSession}}</h4>
+            <br>
+                <ul id="navigationArticleList" class="google-sans-flex-regular">
+                    <li>Content 1</li>
+                    <li>Content 2</li>
+                    <li><details>
+                        <summary>Conteúdo 3</summary>
+                        <ul class="navigationArticleList">
+                            <li>3.1</li>
+                            <li>3.2</li>
+                            <li>3.3</li>
+
+                        </ul>
+                    </details></li>
+                </ul>
+            </div>
+            <div>
+                <button class="HBButtons" id="themeComplex">
+                    <span id="themeIco" class="material-symbols-rounded icoAniTheme iconMNeedsSpace">moon_stars</span>
+                    <h4>Alternar Modo Escuro</h4>
+                </button>
+                <button class="HBButtons" id="Retro">
+                    <span id="Rico" class="material-symbols-rounded icoAniR iconMNeedsSpace iconM">keyboard_arrow_left</span>
+                    <h4>Voltar para a página inicial</h4>
+                </button>
+                <button class="HBButtons" id="saveOffline">
+                    <span id="saveAsIco" class="material-symbols-rounded iconAniSA iconMNeedsSpace iconM">print</span>
+                    <h4>Salvar Offline</h4>
+                </button>
+                <!-- Dark mode  + Retro + Zoom + Salvar como PDF/Imprimir-->
+            </div>
+
+        </div>
+
+    
+</body>
+</html>
