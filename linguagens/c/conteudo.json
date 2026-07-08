@@ -1,0 +1,183 @@
+[
+{
+    "nomeS": "Introdução",
+    "conteudo": [{
+        "tipo": "p",
+        "texto": "A linguagem C é uma das linguagens de programação mais influentes da história. Criada por <strong>Dennis Ritchie no Bell Labs em 1972</strong>, ela é de propósito geral, estruturada (procedural) e compilada. É amplamente utilizada em sistemas operacionais (como o kernel do Linux), drivers de dispositivos e sistemas embarcados."
+    }, {
+        "tipo": "p",
+        "texto": "O ponto forte da linguagem C é o seu alto desempenho e controle de baixo nível sobre a memória, sendo o alicerce para outras linguagens poderosas (como C++, Java e C#)."
+    }, {
+        "tipo": "callout",
+        "categoria": "yes",
+        "titulo": "Características principais",
+        "texto": "<ul><li>Tipagem estática: o tipo é declarado em tempo de compilação</li><li>Compilada: o código é traduzido diretamente para linguagem de máquina</li><li>Programação procedural: baseada em rotinas e funções (sem orientação a objetos)</li><li>Gerenciamento de memória manual com malloc e free</li><li>Linguagem muito <strong>próxima</strong> ao hardware</li></ul>"
+    }
+    ]
+}, {
+    "nomeSS": "Int",
+    "conteudo":[{
+            "tipo": "p",
+            "texto": "<p>Em C, o tipo <strong>int</strong> (abreviação de <em>integer</em>) é um tipo de dado primitivo utilizado para armazenar números inteiros, ou seja, valores numéricos sem casas decimais (como -5, 0 ou 42). Na maioria dos sistemas modernos, um <code>int</code> ocupa 4 bytes (32 bits) de memória, o que permite armazenar valores que variam de -2.147.483.648 até 2.147.483.647.</p>"
+        }, {
+            "tipo": "code",
+            "titulo": "Int.c",
+            "texto": "#include <stdio.h>\n int main() { \n int idade; \n idade = 25; \n printf(\"A idade informada é: %d anos \", idade); \n \n \n return 0;  \n \n \n }"
+
+            
+
+
+            
+     },{
+            "tipo": "callout",
+            "categoria": "tip",
+            "titulo": "Nunca faça isso",
+            "texto": "Nunca coloque um valor com casas decimais"
+        }
+    ]
+}, {
+    "nomeSS": "Float",
+    "conteudo": [
+        {
+            "tipo": "p",
+            "texto": "<p>Em C, o tipo <strong>float</strong> é um tipo de dado primitivo utilizado para armazenar números reais, ou seja, valores que possuem casas decimais (como 3.14, -0.5 ou 10.0). Na maioria dos sistemas, um <code>float</code> ocupa 4 bytes (32 bits) de memória e oferece uma \"precisão simples\", o que significa que ele consegue representar com exatidão cerca de 6 a 7 dígitos após a vírgula.</p>"
+        }, {
+            "tipo": "code",
+            "titulo": "Float.c",
+            "texto": "#include <stdio.h> \n float altura; \n altura = 1.75; \n printf(\"A altura é: %f metros\", altura); \n return 0; \n }"
+        }
+    ]
+}, {
+    "nomeSS": "String",
+    "conteudo" : [{
+        "tipo": "p",
+        "texto": "<p>Em C, diferente de muitas outras linguagens, não existe um tipo de dado primitivo específico para <strong>strings</strong> (textos). Em vez disso, uma string é representada como um <strong>array (ou vetor) de caracteres</strong> do tipo <code>char</code>, que termina obrigatoriamente com um caractere nulo especial (<code>0</code>). Esse caractere nulo atua como um marcador invisível que indica ao computador onde o texto chega ao fim.</p>"
+    }, {
+        "tipo": "code",
+        "titulo": "String.c",
+        "texto": "#include <stdio.h> \n int main() { \n char nome[] = \"Maria\"; \n char saudacao[4] = {'O', 'l', 'a', '\\0'}; \n printf(\"%s, %s!\", saudacao, nome);\n return 0; \n }"
+    }
+    ]
+}, {
+    "nomeSS": "Mover: Direita (>)",
+    "conteudo": [{
+        "tipo": "p",
+        "texto": "O comando <i>></i> avança o ponteiro para a próxima célula da fita."
+    }, {
+        "tipo": "code",
+        "titulo": "direita.bf",
+        "texto": "+++   célula 0 = 3\n>     ponteiro agora está na célula 1\n+++++ célula 1 = 5\n>     ponteiro agora está na célula 2\n+     célula 2 = 1"
+    }]
+}, { 
+    "nomeSS": "Mover: Esquerda (<)",
+    "conteudo": [{
+        "tipo": "p",
+        "texto": "O comando <i><</i> recua o ponteiro para célula anterior da fita."
+    }, {
+        "tipo": "code",
+        "titulo": "esquerda.bf",
+        "texto": ">>>   vai para a célula 3\n++    célula 3 = 2\n<<    volta para célula 1\n++++  célula 1 = 4"
+    }]
+}, {
+    "nomeSS": "Saída (.)",
+    "conteudo": [{
+        "tipo": "p",
+        "texto": "O comando <i>.</i> exibe o caractere cujo código ASCII é igual ao valor da célula atual."
+    }, {
+        "tipo": "code",
+        "titulo": "output.bf",
+        "texto": "ASCII de 'A' = 65\n+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n65 sinais + deixam a célula com valor 65\n.     exibe: A"
+    }, {
+            "tipo": "callout",
+            "categoria": "info",
+            "titulo": "Informação",
+            "texto": "Na prática, usa-se laços para atingir valores altos em vez de repetir + muitas vezes."
+    }]
+}, {
+    "nomeSS": "Entrada (,)",
+    "conteudo": [{
+        "tipo": "p",
+        "texto": "O comando <i>,</i> lê um único caractere da entrada padrão e armazena seu código ASCII na célula atual."
+    }, {
+        "tipo": "code",
+        "titulo": "io.bf",
+        "texto": ",     lê um caractere do usuário e guarda na célula 0\n.     exibe o mesmo caractere de volta (eco)"
+    }]
+}, {
+    "nomeSS": "Laço ([])",
+    "conteudo": [{
+        "tipo": "p",
+        "texto": "<i>[</i> e <i>]</i> formam o único mecanismo de controle de fluxo do Brainfuck:\n<ul><li>[ : se a célula atual for 0, pula para depois do ] correspondente</li><li>] : se a célula atual for diferente de 0, volta para o [ correspondente</li></ul>"
+    }, {
+        "tipo": "code",
+        "titulo": "loop.bf",
+        "texto": "+++++  célula 0 = 5\n[     enquanto célula 0 != 0:\n   >+< incrementa célula 1, volta para a célula 0\n   - decrementa célula 0\n]      repete até célula 0 = 0\nResultado: célula 1 = 5 (valor copiado)"
+    }, {
+            "tipo": "callout",
+            "categoria": "info",
+            "titulo": "Informação",
+            "texto": "Na prática, usa-se laços para atingir valores altos em vez de repetir + muitas vezes."
+    }]
+}, {
+    "nomeSS": "Hello World",
+    "conteudo": [{
+        "tipo": "p",
+        "texto": "O clássico \"Hello, World!\" em Brainfuck. Cada letra é construída usando laços para atingir o valor ASCII desejado:"
+    }, {
+        "tipo": "code",
+        "titulo": "loop.bf",
+        "texto": "++++++++  célula 0 = 8\n[\n       >++++ célula 1 += 4\n[\n                ++>+++>+++>+<<<<-\n        ]\n          >+>+>->>+\n            [<]<-\n]\n>>. H\n>---. e\n+++++++.. ll\n+++. o\n>>. ,\n<-. (espaço)\n<. W\n+++. o\n------. r\n--------. l\n>>+. d\n>++; !"
+    }, {
+            "tipo": "callout",
+            "categoria": "info",
+            "titulo": "Informação",
+            "texto": "Este é um dos programas mais famosos em Brainfuck. Usa laços aninhados para calcular os valores ASCII de cada letra de forma eficiente."
+    }]
+}, { 
+    "nomeSS": "Somar dois números",
+    "conteudo": [{
+        "tipo": "p",
+        "texto": "Somando 3 + 5 e exibindo o resultado (valor 8, que não é um caractere visível, mas o princípio é demonstrado):"
+    }, {
+        "tipo": "code",
+        "titulo": "soma.bf",
+        "texto": "+++   célula 0 = 3\n>+++++    célula 1 = 5\n[<+>-]    enquanto célula 1 != 0: célula 0++, célula 1--\nResultado: célula 0 = 8, célula 1 = 0\n<        volta para célula 0\n\nPara exibir como dígito ASCII, somamos 48 (ASCII de '0'):\n++++++++++++++++++++++++++++++++++++++++++++++++\n48 sinais + (célula 0 agora = 56, ASCII de '8')\n.      exibe: 8"
+    }]
+}, { 
+    "nomeSS": "Contador com laço",
+    "conteudo": [{
+        "tipo": "p",
+        "texto": "Exibe os caracteres ASCII de 'A' (65) até 'E' (69) usando um laço:"
+    }, {
+        "tipo": "code",
+        "titulo": "conta.bf",
+        "texto": ">+++++   célula 1 = 5\n<  volta para célula 0\ncélula 0 começa em 65 (ASCII de 'A')\n+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n65 sinais +\n\n[>[.>]<<+>>-] Versão simplificada do conceito\n\nVersão didática mais clara:\n. A (65)\n+. B (66)\n+.C (67)\n+.D (68)\n+. E (69)"
+    }]
+}, {
+    "nomeS": "Dicas e Padrões",
+    "conteudo" :[{
+        "tipo": "code",
+        "titulo": "Zerar uma célula | zero.bf",
+        "texto": "[-] decrementa até 0"
+    }, {
+        "tipo": "code",
+        "titulo": "Copiar valor de uma célula para outra | copy.bf",
+        "texto": "Copia célula 0 para célula 1 (destrói o original)\n[>+<-]\n\nCopia célula 0 para célula 1 preservando o original (usa célula 2 como temp)\n[>+>+<<-]>>[<<+>>-]"
+    },{
+        "tipo": "code",
+        "titulo": "Multiplicar | multi.bf",
+        "texto": "Multiplica células 0 e 1, resultado na célula 2\n[>[>+>+<<-]>>[<<+>>-]<<<-]"
+    }, {
+            "tipo": "callout",
+            "categoria": "info",
+            "titulo": "Informação",
+            "texto": "Comentários em Brainfuck: qualquer caractere que não seja + - > < . , [ ] é ignorado pelo interpretador, portanto pode ser usado livremente como comentário ou espaçamento."
+    }]
+    }, {
+        "nomeS": "Leitura Recomendada",
+        "conteudo": {
+            "tipo":"p",
+            "texto": "<a href=\"https://esolangs.org/wiki/Brainfuck\">Esolangs Wiki — Brainfuck (referência completa)</a>\n<a href=\"https://pt.wikipedia.org/wiki/Brainfuck\">Wikipedia — Brainfuck (pt-br)</a>\n<a href=\"https://copy.sh/brainfuck/\">Interpretador online de Brainfuck</a>\n</a>\n<a href=\"https://www.nayuki.io/page/brainfuck-interpreter-javascript\">Interpretador Brainfuck em JavaScript</a>"
+        }
+    }  
+]

@@ -1,0 +1,62 @@
+{
+    "tituloPrincipal": "C",
+    "icone": "<svg class=\"iconeLoc\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\" aria-label=\"Ícone oficial da linguagem C\" role=\"img\"> <path fill=\"currentColor\" iconeLoc=\"resources/ico/c/c\"/></svg>",
+    "secao": [{
+            "nomeS": "Introdução",
+            "iconGMS": "play_arrow"
+        },{
+            "nomeS": "Tipos de Dados",
+            "iconGMS": "terminal_2",
+            "subSections": [{
+                "nomeSS": "Int"
+            }, {
+                "nomeSS": "Float"
+            }, {
+                "nomeSS": "String"
+            }, {
+                "nomeSS": "bool"
+            }, {
+                "nomeSS": "char"
+            }
+            ]
+        },{
+            "nomeS": "estrutura de Dados",
+            "iconGMS": "database",
+            "subSections": [{
+                "nomeSS": "Geral"
+            }, {
+                "nomeSS": "Incrementar (+)"
+            }, {
+                "nomeSS": "Decrementar (-)"
+            }, {
+                "nomeSS": "Mover: Direita (>)"
+            }, {
+                "nomeSS": "Mover: Esquerda (<)"
+            }, {
+                "nomeSS": "Saída (.)"
+            }, {
+                "nomeSS": "Entrada (,)"
+            }, {
+                "nomeSS": "Laço ([])"
+            }
+            ]
+        }, {
+            "nomeS": "Exemplos",
+            "iconGMS": "code_xml",
+            "subSections":[{
+                "nomeSS": "Hello World"
+            }, {
+                "nomeSS": "Somar dois números"
+            }, {
+                "nomeSS": "Contador com laço"
+            }
+        ]
+        }, {
+            "nomeS": "Dicas e Padrões",
+            "iconGMS": "lightbulb"
+        }, {
+            "nomeS": "Leitura Recomendada",
+            "iconGMS": "book"
+        }
+    ]
+}
