@@ -39,7 +39,7 @@ nav {
 #subtitle {
     color: var(--invertedNonAccentColor);
     font-size: clamp(1rem, 2vw, 1.5rem);
-    font-weight: 800;
+    font-weight: 700;
 }
 
 #favicon {
