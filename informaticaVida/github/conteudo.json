@@ -1,0 +1,133 @@
+[
+{
+    "nomeS": "Introdução",
+    "conteudo": [{
+        "tipo": "p",
+        "texto": "O GitHub é uma plataforma em nuvem que hospeda códigos-fonte e funciona como uma rede social para programadores. Ele serve para armazenar projetos, gerenciar alterações no código (controle de versão) e permitir que equipes colaborem simultaneamente sem o risco de sobrescrever o trabalho alheio"
+    },{
+        "tipo": "callout",
+        "categoria": "yes",
+        "titulo": "Características principais",
+        "texto": "<ul><li>Armazenamento de código em repositórios</li><li>Controle de versões com Git.</li><li>Histórico de alterações (commits).</li><li>Colaboração entre desenvolvedores.</li><li>Suporte a projetos públicos e privados.</li></ul>"
+    }
+    ]
+}, {
+    "nomeSS": "Introdução ao Repositório",
+    "conteudo":[{
+            "tipo": "p",
+            "texto": "<p>Um repositório no <strong>GitHub</strong> é como se fosse a pasta principal do seu projeto na nuvem. Ele armazena todos os arquivos, documentos e códigos da sua aplicação, além de guardar o histórico completo de todas as alterações feitas neles ao longo do tempo. É esse espaço que permite que você e outras pessoas trabalhem juntos no mesmo projeto de forma segura e organizada, mantendo o controle de cada versão do seu código.</p>"
+    
+        },{
+        }
+    ]
+}, {
+    "nomeSS": "README",
+    "conteudo": [
+        {
+            "tipo": "p",
+            "texto": "<p>O arquivo <strong>README</strong> (leia-me) é o cartão de visitas do seu repositório. Geralmente criado no formato Markdown (<code>README.md</code>), ele é o primeiro documento que as pessoas visualizam ao acessar o seu projeto no GitHub. A sua função é servir como um manual de instruções, explicando de forma clara o que o projeto faz, como instalá-lo, como utilizá-lo e como outros desenvolvedores podem contribuir. Ter um bom README é essencial para que qualquer pessoa entenda rapidamente o propósito e o funcionamento do seu código.</p>"
+        }
+    ]
+}, {
+    "nomeSS": "License",
+    "conteudo" : [{
+        "tipo": "p",
+        "texto": "<p>O arquivo de <strong>Licença (License)</strong> é o documento legal que define as regras sobre o que outras pessoas podem ou não fazer com o código do seu repositório. Sem uma licença explícita, as leis padrão de direitos autorais se aplicam, o que significa que, por padrão, ninguém tem permissão para copiar, distribuir ou modificar o seu projeto. É a licença que transforma o seu código em um verdadeiro software de código aberto (<em>open source</em>).</p>"
+
+    },{
+
+    "tipo":"p",
+    "texto": "<p>Existem várias licenças disponíveis, cada uma com regras diferentes. Aqui estão os tipos mais comuns encontrados no GitHub:</p>"
+    },{
+
+    "tipo":"callout",
+    "categoria":"info",
+    "titulo":"tipos de Licença",
+    "texto":"<ul> <li><strong>MIT License:</strong> É a mais popular, curta e permissiva. Ela permite que qualquer pessoa use, copie, modifique e até venda o seu código, com a única condição de que o aviso de direitos autorais original seja mantido.</li> <li><strong>Apache License 2.0:</strong> É muito semelhante à MIT por ser bastante permissiva, mas inclui regras mais detalhadas e oferece proteção extra relacionada ao uso de patentes de software.</li> <li><strong>GNU GPLv3 (General Public License):</strong> É uma licença do tipo <em>copyleft</em> (forte). Ela permite que os usuários modifiquem e compartilhem o código, mas exige que qualquer novo projeto criado a partir dele também seja de código aberto e utilize exatamente essa mesma licença.</li> <li><strong>Nenhuma licença (Sem licença):</strong> Se você criar um repositório e não incluir um arquivo de licença, o código fica protegido por direitos autorais exclusivos. Outras pessoas podem até ler o código no GitHub, mas não têm permissão legal para usá-lo em seus próprios projetos.</li></ul>"
+
+    }
+    
+    ]
+}, {
+    "nomeSS": "Pages",
+    "conteudo": [{
+        "tipo": "p",
+        "texto": "<p>O <strong>GitHub Pages</strong> é um serviço gratuito de hospedagem de sites estáticos integrado diretamente ao GitHub. Ele permite que você publique um site na internet usando os arquivos que já estão salvos no seu repositório.</p>"
+    }, {
+        "tipo":"p",
+        "texto":"Em vez de exibir apenas o código-fonte, como acontece na visualização padrão, o GitHub Pages lê os seus arquivos HTML, CSS e JavaScript e os transforma em uma página web real e funcional. O site fica acessível através de um link público (geralmente no formato <code>seunome.github.io/nome-do-projeto</code>). É a ferramenta ideal para hospedar portfólios, blogs, documentações ou páginas de apresentação do seu software, sem que você precise configurar ou pagar por um servidor externo.</p>"
+    }]
+}, { 
+    "nomeSS": "Geral",
+    "conteudo": [{
+        "tipo": "p",
+        "texto": "<p>A <strong>Personalização de Perfil</strong> é um recurso muito bacana do GitHub que permite transformar a sua página inicial em uma verdadeira vitrine profissional. Para ativar esse segredo, você precisa criar um novo repositório que tenha <strong>exatamente o mesmo nome do seu nome de usuário</strong> (por exemplo, <code>seunome/seunome</code>).</p>"
+    },{
+
+        "tipo":"p",
+        "texto":"<p>Como ele aceita Markdown e algumas tags HTML, você pode customizá-lo de diversas maneiras. Aqui estão alguns elementos comuns que os desenvolvedores colocam em seus perfis:</p>"
+
+
+},{
+
+    "tipo":"callout",
+    "categoria":"info",
+    "titulo":"o que você pode fazer",
+    "texto":"<ul><li><strong>Apresentação:</strong> Uma breve biografia sobre quem você é, no que está trabalhando e o que está aprendendo atualmente.</li><li><strong>Stacks e Tecnologias:</strong> Ícones e selos (<em>badges</em>) visuais mostrando as linguagens de programação, frameworks e ferramentas que você domina.</li><li><strong>Redes e Contatos:</strong> Links diretos para o seu LinkedIn, portfólio, blog, e-mail ou outras redes sociais.</li><li><strong>Estatísticas em Tempo Real:</strong> Utilizando integrações e ferramentas da comunidade (como os <em>GitHub Readme Stats</em>), você pode exibir gráficos dinâmicos mostrando suas linguagens mais usadas, suas notas no GitHub ou suas sequências de contribuições.</li></ul>"
+
+
+}]
+}, {
+    "nomeSS": "Pinned",
+    "conteudo": [{
+        "tipo": "p",
+        "texto": "<p>A seção <strong>Pinned</strong> (ou Repositórios Fixados) funciona como a vitrine principal do seu perfil no GitHub. Por padrão, a plataforma exibe os repositórios nos quais você trabalhou mais recentemente. Porém, ao usar o recurso de fixar, você assume o controle e escolhe exatamente o que deseja destacar para quem visita a sua página.</p>"
+    }, {
+        "tipo": "p",
+        "texto": "<p>Você pode fixar até <strong>6 repositórios ou gists públicos</strong> logo abaixo da sua apresentação de perfil. Isso é essencial para construir um portfólio estratégico, pois garante que recrutadores e outros desenvolvedores encontrem seus melhores trabalhos de forma rápida, sem precisarem vasculhar todo o seu histórico.</p>"
+    
+    }]
+},{
+    "nomeSS": "Stars",
+    "conteudo": [{
+        "tipo": "p",
+        "texto": "<p>As <strong>Stars</strong> (Estrelas) são o equivalente do GitHub ao Curtir ou Favoritar que usamos em outras plataformas. É uma forma simples e direta de demonstrar apreço pelo trabalho de outro desenvolvedor e, ao mesmo tempo, salvar aquele projeto para acessar com facilidade depois.</p><p>Elas desempenham dois papéis fundamentais dentro da comunidade do GitHub:</p>"
+    }, {
+        "tipo": "callout",
+        "categoria":"info",
+        "titulo":"",
+        "texto": "<ul><li><strong>Para você (como usuário):</strong> Funciona como um marcador de páginas (<em>bookmark</em>). Sempre que você dá uma estrela a um repositório, ele é salvo em uma aba específica no seu perfil, permitindo que você organize e encontre ferramentas, bibliotecas ou tutoriais úteis rapidamente.</li><li><strong>Para o criador e para o projeto:</strong> Funciona como uma métrica de popularidade, relevância e credibilidade. Repositórios com muitas estrelas ganham mais visibilidade na plataforma, têm mais chances de aparecer na seção <em>Trending</em> (Em alta) e sinalizam para outros desenvolvedores (e recrutadores) que aquele código tem grande valor para a comunidade.</li></ul>"
+    }]
+},{
+    "nomeS": "Dicas",
+    "conteudo" :[{
+    "tipo":"p",
+    "texto":"<p>Para fechar esse guia com chave de ouro, aqui vão algumas dicas valiosas para você extrair o máximo da plataforma e deixar o seu portfólio impecável para a comunidade e para recrutadores:</p>"
+
+    },{
+
+        "tipo": "callout",
+        "categoria":"tip",
+        "titulo": "Dica 1",
+        "texto": "<strong>Capriche sempre no README:</strong> Pense nele como a vitrine da sua loja. Um projeto incrível com um README vazio acaba sendo ignorado. Adicione capturas de tela (screenshots) ou GIFs mostrando o seu projeto funcionando na prática."
+    }, {
+        "tipo": "callout",
+        "categoria":"tip",
+        "titulo": "Dica 2",
+        "texto": "<strong>Revise seu Pinned periodicamente:</strong> À medida que você evolui como desenvolvedor, seus projetos antigos podem não refletir mais o seu nível de habilidade atual. Troque os repositórios fixados sempre que criar algo melhor."
+    }, {
+        "tipo": "callout",
+        "categoria":"tip",
+        "titulo": "Dica 3",
+        "texto": "<strong>Explore e interaja (Use as Stars!):</strong> Não use o GitHub apenas como um pendrive para o seu código. Navegue, busque projetos na sua linguagem favorita, dê <em>Stars</em> para salvar referências legais e leia como outros programadores resolvem problemas."
+    }
+    ]
+        },{
+        "nomeS": "Leitura Recomendada",
+        "conteudo": [{
+            "tipo":"p",
+            "texto": "<a href=\"https://esolangs.org/wiki/Brainfuck\">Esolangs Wiki — Brainfuck (referência completa)</a>\n<a href=\"https://pt.wikipedia.org/wiki/Brainfuck\">Wikipedia — Brainfuck (pt-br)</a>\n<a href=\"https://copy.sh/brainfuck/\">Interpretador online de Brainfuck</a>\n<a href=\"https://www.nayuki.io/page/brainfuck-interpreter-javascript\">Interpretador Brainfuck em JavaScript</a>"
+        }]
+    }
+]
+

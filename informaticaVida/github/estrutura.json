@@ -1,0 +1,36 @@
+{
+    "tituloPrincipal": "Github",
+    "icone": "<svg class=\"iconeLoc\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\" aria-label=\"Ícone oficial da linguagem C\" role=\"img\"> <path fill=\"currentColor\" iconeLoc=\"resources/ico/c/c\"/></svg>",
+    "secao": [{
+            "nomeS": "Introdução",
+            "iconGMS": "play_arrow"
+        },{
+            "nomeS": "Repositório",
+            "iconGMS": "folder",
+            "subSections": [{
+                "nomeSS": "Introdução ao Repositório"
+            }, {
+                "nomeSS": "README"
+            }, {
+                "nomeSS": "License"
+                }, {
+                "nomeSS": "Pages"
+            }
+            ]
+        },{
+            "nomeS": "Personalização de perfil",
+            "iconGMS": "palette",
+            "subSections": [{
+                "nomeSS": "Geral"
+            }, {
+                "nomeSS": "Pinned"
+            }, {
+                "nomeSS": "Stars"
+            }
+            ]
+        },{
+            "nomeS": "Dicas",
+            "iconGMS": "lightbulb"
+        }
+    ]
+}
