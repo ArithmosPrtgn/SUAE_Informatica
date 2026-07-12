@@ -12,6 +12,10 @@
         "categoria": "yes",
         "titulo": "Características principais",
         "texto": "<ul><li>Tipagem estática: o tipo é declarado em tempo de compilação</li><li>Compilada: o código é traduzido diretamente para linguagem de máquina</li><li>Programação procedural: baseada em rotinas e funções (sem orientação a objetos)</li><li>Gerenciamento de memória manual com malloc e free</li><li>Linguagem muito <strong>próxima</strong> ao hardware</li></ul>"
+    }, {
+        "tipo": "image",
+        "fileLocation": "/resources/test/illSeeYouInHell.webp",
+        "caption": "hyperlaser rahhh"
     }
     ]
 }, {

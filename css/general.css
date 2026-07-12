@@ -36,6 +36,8 @@ p {
     text-align: left;
 }
 
+.imageDiv > p { color: #888888; text-align: center; }
+
 .imageItem {
     border-radius: 20px;
     max-width: 75vw;

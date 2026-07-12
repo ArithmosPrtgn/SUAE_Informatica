@@ -252,6 +252,26 @@ function createTableBlock(item) {
 	return wrapper;
 }
 
+function createImageBlock(item) {
+	const wrapper = document.createElement('div');
+	wrapper.className = 'imageDiv';
+
+	const img = document.createElement('img');
+	img.className = 'imageItem'
+	img.src = item.fileLocation || '';
+	img.alt = item.legenda || item.caption || '';
+	wrapper.append(img);
+
+	const caption = item.legenda || item.caption;
+	if (caption) {
+		const captionEl = document.createElement('p');
+		captionEl.textContent = caption;
+		wrapper.append(captionEl);
+	}
+
+	return wrapper;
+}
+
 function createGenericBlock(item) {
 	const wrapper = document.createElement('div');
 	wrapper.className = item.tipo;
@@ -282,6 +302,10 @@ function createContentBlock(item) {
 
 	if (item.tipo === 'tabelaHeaderVert' || item.tipo === 'tabelaHeaderHor') {
 		return createTableBlock(item);
+	}
+
+	if (item.tipo === 'image') {
+		return createImageBlock(item);
 	}
 
 	return createGenericBlock(item);
