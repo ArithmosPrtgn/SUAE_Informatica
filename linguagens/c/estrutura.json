@@ -1,6 +1,6 @@
 {
     "tituloPrincipal": "C",
-    "icone": "/resources/ico/c/c.svg",
+    "iconeLoc": "/resources/ico/c/c.svg",
     "secao": [{
             "nomeS": "Introdução",
             "iconGMS": "play_arrow"
