@@ -1,6 +1,6 @@
 {
     "tituloPrincipal": "C",
-    "iconeLoc": "/resources/ico/c/c.svg",
+    "icone": "<svg class=\"iconeLoc\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\" aria-label=\"Ícone oficial da linguagem C\" role=\"img\"> <path fill=\"currentColor\" iconeLoc=\"resources/ico/c/c\"/></svg>",
     "secao": [{
             "nomeS": "Introdução",
             "iconGMS": "play_arrow"
@@ -14,11 +14,120 @@
             }, {
                 "nomeSS": "String"
             }, {
-                "nomeSS": "bool"
+                "nomeSS": "Bool"
             }, {
-                "nomeSS": "char"
+                "nomeSS": "Char"
+            },{
+                "nomeSS":"Void"
             }
             ]
+        },{
+            "nomeS": "Estrutura de Dados",
+            "iconGMS": "database",
+            "subSections": [{
+                "nomeSS": "Array Dinâmico"
+            }, {
+                "nomeSS": "Array Fixo"
+            }, {
+                "nomeSS": "Tabelas Hash"
+            }
+            ]
+        },{
+
+        "nomeS":"Entrada/Saída",
+        "subSections":[{
+
+        "nomeSS":"Printf"
+        },{
+        "nomeSS":"Scanf"
+        }
+        ]
+    
+
+        },{
+        "nomeS": "Controle de Fluxo",
+            "subSections": [{
+                "nomeSS": "If, else e else if"
+            }, {
+                "nomeSS": "For"
+            }, {
+                "nomeSS": "While e Do while"
+            }, {
+                "nomeSS": "Switch Case"
+            }
+            ]
+
+        },{
+
+          "nomeS": "Funções",
+            "subSections": [{
+
+                "nomeSS": "Definição"
+            }, {
+                "nomeSS": "Ponteiros"
+            },{
+                "nomeSS": "Retorno de Valores"
+            }
+            ]
+
+
+        },{
+
+        "nomeS":"Matrizes"
+
+        },{
+
+
+        "nomeS": "Biblioteca",
+            "iconGMS": "Book",
+            "subSections": [{
+                "nomeSS": "Geral"
+            }, {
+                "nomeSS": "Entrada e Saída"
+            },{
+                "nomeSS": "Matemática"
+            }, {
+                "nomeSS": "Horário"
+            },{
+                "nomeSS": "Suporte Booleano"
+            }
+            ]
+
+
+        },{
+
+        "nomeS": "Formatos",
+            "iconGMS": "percent",
+            "subSections": [{
+                "nomeSS": "Inteiro"
+            }, {
+                "nomeSS": "Número Decimal"
+            }, {
+                "nomeSS": "Número Decimal Grande"
+            }, {
+                "nomeSS": "Caracteres"
+            }, {
+                "nomeSS": "Textos"
+            }
+            ]  
+
+        },{
+            "nomeS": "Exemplos",
+            "iconGMS": "code_xml",
+            "subSections":[{
+                "nomeSS": "Hello World"
+            }, {
+                "nomeSS": "Somar dois números"
+            }, {
+                "nomeSS": "Contador com laço"
+            }
+        ]
+        },{
+            "nomeS": "Dicas e Padrões",
+            "iconGMS": "lightbulb"
+        }, {
+            "nomeS": "Leitura Recomendada",
+            "iconGMS": "book"
         }
     ]
 }
