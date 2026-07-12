@@ -147,12 +147,13 @@ body.L .icoAniHB { font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "ops
     position: absolute;
     top: calc(100% + 8px);
     right: 0;
-    width: max(25vw, 250px);
+    width: max(25vw, 300px);
     max-height: 50vh;
     overflow-y: auto;
+    overflow-x: hidden;
     background-color: var(--surfaceColor);
     border-radius: 20px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 24px var(--invertedNonAccentColor);
     z-index: 100;
     transition: all 0.3s ease;
 }
@@ -199,7 +200,7 @@ body.L .icoAniHB { font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "ops
     width: 100%;
     display: block;
     padding: 10px 14px;
-    color: var(--nonAccentColor);
+    border-radius: 18px;
     border-bottom: 1px solid rgba(128,128,128,0.15);
     cursor: pointer;
 }
