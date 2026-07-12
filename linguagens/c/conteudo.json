@@ -23,6 +23,11 @@
             "tipo": "code",
             "titulo": "Int.c",
             "texto": "#include <stdio.h>\n int main() { \n int idade; \n idade = 25; \n printf(\"A idade informada é: %d anos \", idade); \n \n \n return 0;  \n \n \n }"
+
+            
+
+
+            
      },{
             "tipo": "callout",
             "categoria": "tip",
@@ -53,5 +58,435 @@
         "texto": "#include <stdio.h> \n int main() { \n char nome[] = \"Maria\"; \n char saudacao[4] = {'O', 'l', 'a', '\\0'}; \n printf(\"%s, %s!\", saudacao, nome);\n return 0; \n }"
     }
     ]
+}, {
+    "nomeSS": "Bool",
+    "conteudo": [{
+        "tipo": "p",
+        "texto": "<p>Em C, tradicionalmente não existia um tipo booleano nativo; o valor <strong>0</strong> representava falso (<em>false</em>) e qualquer valor inteiro diferente de zero (geralmente <strong>1</strong>) representava verdadeiro (<em>true</em>). A partir do padrão C99, foi introduzida a biblioteca padrão <code>&lt;stdbool.h&gt;</code>, que adicionou o tipo <code>bool</code> e as palavras-chave <code>true</code> e <code>false</code> para tornar a lógica de programação mais legível e padronizada.</p>"
+    }, {
+        "tipo": "code",
+        "titulo": "Bool.c",
+        "texto": "#include <stdio.h> \n #include <stdbool.h> \n int main() { \n bool sistema_ativo = true; \n bool possui_erros = false; \n if (sistema_ativo) { \n printf(\"O sistema esta ativo.\"); \n } else { \n printf(\"O sistema esta inativo.\"); \n } \n if (!possui_erros) { \n printf(\"Operacao concluida com sucesso. Nenhum erro encontrado.\"); \n } \n printf(\"--- Valores Inteiros Correspondentes ---\"); \n printf(\"Valor numerico de 'true': %d\", true); \n printf(\"; \"); \n printf(\"Valor numerico de 'false': %d\", false); \n return 0; \n }"
+    }]
+}, { 
+    "nomeSS": "Char",
+    "conteudo": [{
+        "tipo": "p",
+        "texto": "<p>Em C, o tipo <strong>char</strong> é utilizado para armazenar um único caractere, como uma letra, um dígito ou um símbolo. Nos bastidores, a linguagem trata o <code>char</code> como um número inteiro pequeno (geralmente ocupando 1 byte de memória) que guarda o valor numérico correspondente àquele caractere na <strong>tabela ASCII</strong>. Por exemplo, a letra maiúscula <em>'A'</em> não é salva como um desenho da letra, mas sim como o número decimal 65.</p>"
+    }, {
+        "tipo": "code",
+        "titulo": "Char.c",
+        "texto": "#include <stdio.h> \n int main() { \n char nota = 'A'; \n printf(\"Sua nota final e: %c\", nota); \n return 0; \n }"
+    }]
+},{
+
+    "nomeSS": "Void",
+    "conteudo":[{
+    "tipo":"p",
+    "texto":"<p>Em C, a palavra-chave <strong>void</strong> significa vazio ou ausência de tipo. Ela é usada principalmente em duas situações básicas: para indicar que uma função não vai devolver nenhum resultado ao final de sua execução (ela apenas faz uma ação, como imprimir algo, e encerra), ou para indicar que uma função não precisa receber nenhum parâmetro para funcionar. Em níveis mais avançados, o <code>void</code> também aparece em ponteiros genéricos, que podem apontar para qualquer tipo de dado na memória.</p>"
+    },{
+
+    "tipo":"code",
+    "titulo":"Void.c",
+    "texto":"#include <stdio.h> \n void exibirMensagem() { \n printf(\"Bem-vindo! Esta mensagem foi impressa por uma funcao void.\"); \n } \n int main() { \n printf(\"Iniciando o programa...\"); \n exibirMensagem(); \n printf(\"Programa finalizado.\"); \n return 0; \n }"
+
+
+    }]
+},{
+    "nomeSS": "Array Dinâmico",
+    "conteudo": [{
+        "tipo": "p",
+        "texto": "<p>Em C, um <strong>array dinâmico</strong> permite que você decida o tamanho da sua lista de itens enquanto o programa está rodando, em vez de ter um tamanho fixo travado no código. Para isso, usamos <em>ponteiros</em> e funções da biblioteca <code>&lt;stdlib.h&gt;</code>, como o <code>malloc</code>, que aluga um espaço na memória do computador sob demanda. A regra de ouro dos arrays dinâmicos é: toda memória que você aluga com <code>malloc</code>, você obrigatoriamente deve devolver no final usando a função <code>free</code>.</p>"
+    }, {
+        "tipo": "code",
+        "titulo": "ArrayDinamico.c",
+        "texto": "#include <stdio.h> \n #include <stdlib.h> \n int main() { \n int tamanho = 3; \n int *notas = malloc(tamanho * sizeof(int)); \n if (notas == NULL) { \n printf(\"Erro: Sem memoria disponivel!\"); \n return 1; \n } \n notas[0] = 85; \n notas[1] = 90; \n notas[2] = 78; \n printf(\"A primeira nota e: %d\", notas[0]); \n printf(\"A ultima nota e: %d\", notas[2]); \n free(notas); \n return 0; \n }"
+    }, {
+            "tipo": "callout",
+            "categoria": "tip",
+            "titulo": "O que você precisa lembrar #1",
+            "texto": "stdlib.h Biblioteca necessária para lidar com a memória do sistema."
+    },{
+
+        "tipo":"callout",
+        "categoria":"tip",
+        "titulo":"O que você precisa lembrar #2",
+        "texto":"malloc: (Memory Allocation) É a função que pede espaço ao computador. Você precisa dizer quantos bytes quer, por isso usamos tamanho * sizeof(int) (tamanho desejado multiplicado pelo peso de um número inteiro)."
+    },{
+
+        "tipo":"callout",
+        "categoria":"tip",
+        "titulo":"O que você precisa lembrar #3",
+        "texto":"free: É a função que devolve a memória. Se você esquecer de usar o free, seu programa terá um \"vazamento de memória\" (memory leak) e ficará cada vez mais pesado."
+
+    }
+  
+]
+}, {
+    "nomeSS": "Array Fixo",
+    "conteudo": [{
+        "tipo": "p",
+        "texto": "<p>Em C, um <strong>array fixo</strong> (ou estático) é uma estrutura de dados que armazena uma coleção de elementos do mesmo tipo, mas com um <strong>tamanho predefinido</strong> que não pode ser alterado após a compilação. Diferente do array dinâmico, o espaço de memória é reservado automaticamente na <em>pilha (stack)</em> do sistema. Isso o torna extremamente rápido e seguro, mas exige que você saiba exatamente quantos elementos vai precisar antes mesmo de o programa começar a rodar.</p>"
+    }, {
+        "tipo": "code",
+        "titulo": "ArrayFixo.c",
+        "texto": "#include <stdio.h> \n int main() { \n int notas[4] = {85, 90, 78, 92}; \n notas[2] = 80; \n printf(\"Nota 1 (Indice 0): %d\", notas[0]); \n printf(\"Nota 2 (Indice 1): %d\", notas[1]); \n printf(\"Nota 3 (Indice 2 - Modificada): %d\", notas[2]); \n printf(\"Nota 4 (Indice 3): %d\", notas[3]); \n return 0; \n }"
+    }]
+}, {
+    "nomeSS": "Tabelas Hash",
+    "conteudo": [{
+        "tipo": "p",
+        "texto": "<p>Em C, uma <strong>Tabela Hash</strong> (ou Tabela de Dispersão) é uma estrutura de dados avançada que permite guardar e encontrar informações de forma quase instantânea. Ela funciona como um grande armário cheio de gavetas: você usa uma \"chave\" (como um número de ID ou CPF) que passa por uma fórmula matemática chamada <strong>função hash</strong>. Essa função transforma a chave em um número de índice, dizendo exatamente em qual gaveta (posição do array) o dado deve ser guardado ou buscado. Isso evita que o programa precise procurar os itens um por um, economizando muito tempo de processamento.</p>"
+    }, {
+        "tipo": "code",
+        "titulo": "TabelasHash.c",
+        "texto": "#include <stdio.h> \n #include <string.h> \n #include <stdbool.h> \n #define TAMANHO_TABELA 10 \n typedef struct { \n int chave; \n char nome[50]; \n bool esta_ocupada;  \n } Gaveta; \n Gaveta tabela[TAMANHO_TABELA]; \n int funcaoHash(int chave) { return chave % TAMANHO_TABELA; } \n void inserir(int chave, const char* nome) { \n int indice = funcaoHash(chave);\n tabela[indice].chave = chave; \n strcpy(tabela[indice].nome, nome); \n tabela[indice].esta_ocupada = true; \n printf(\"Inserido: '%s' na gaveta %d (Usando a chave: %d)\", nome, indice, chave); \n } \n void buscar(int chave) { \n int indice = funcaoHash(chave); \n if (tabela[indice].esta_ocupada && tabela[indice].chave == chave) { \n printf(\"Encontrado: '%s' esta na gaveta %d\", tabela[indice].nome, indice); \n } else { \n printf(\"Erro: Chave %d nao encontrada.\", chave); \n } \n } \n int main() { \n for (int i = 0; i < TAMANHO_TABELA; i++) { \n tabela[i].esta_ocupada = false; \n } \n printf(\"--- Guardando Dados ---\"); \n inserir(105, \"Alice\"); \n inserir(202, \"Bob\"); \n inserir(309, \"Carol\"); \n printf(\"--- Buscando Dados ---\"); \n buscar(202); \n buscar(105); \n buscar(999); \n return 0; \n } "
+    }
+    ]
+}, {
+    "nomeSS": "Printf",
+    "conteudo": [{
+        "tipo": "p",
+        "texto": "<p>Em C, a função <strong>printf</strong> (abreviação de <em>\"print formatted\"</em> ou \"imprimir formatado\") é a principal ferramenta usada para exibir textos e números na tela do computador (no console). Ela faz parte da biblioteca padrão <code>&lt;stdio.h&gt;</code> e é extremamente versátil porque permite misturar texto comum com o valor de variáveis. Para isso, ela usa \"curingas\" especiais chamados de especificadores de formato (como <code>%d</code> para inteiros ou <code>%f</code> para decimais), que marcam o local exato onde o valor da variável deve aparecer na frase.</p>"
+    }, {
+        "tipo": "code",
+        "titulo": "Printf.c",
+        "texto": " #include <stdio.h> \n int main() { \n printf(\"teste\") \n }"
+    },{
+
+    }]
+}, { 
+    "nomeSS": "Scanf",
+    "conteudo": [{
+        "tipo": "p",
+        "texto": "<p>Em C, a função <strong>scanf</strong> é a principal ferramenta usada para capturar dados que o usuário digita no teclado. Assim como o <code>printf</code>, ela pertence à biblioteca <code>&lt;stdio.h&gt;</code> e utiliza os mesmos \"curingas\" de formatação (como <code>%d</code> para inteiros ou <code>%f</code> para decimais) para entender que tipo de dado está sendo lido. A regra de ouro do <code>scanf</code> é que, na maioria dos casos, você deve colocar o símbolo <strong>&amp;</strong> (e comercial) antes do nome da variável. Esse símbolo indica o <em>endereço de memória</em> da variável, avisando ao computador exatamente onde ele deve guardar o valor que acabou de ser digitado.</p>"
+    }, {
+        "tipo": "code",
+        "titulo": "Scanf.c",
+        "texto": "#include <stdio.h> \n int main() { \n int idade; \n printf(\"Por favor, digite a sua idade: \"); \n scanf(\"%d\", &idade); \n return 0; \n }"
+    }]
+},{
+
+
+
+},{ 
+    "nomeSS": "If, else e else if",
+    "conteudo": [{
+        "tipo": "p",
+        "texto": "<p>Em C, as estruturas <strong>if</strong> (se), <strong>else if</strong> (senão se) e <strong>else</strong> (senão) formam a base da tomada de decisões do seu programa, permitindo que ele escolha caminhos diferentes com base em condições. O <code>if</code> testa uma condição e, se ela for verdadeira, executa o seu bloco de código. O <code>else if</code> entra em cena para testar uma <em>nova</em> condição caso a primeira tenha falhado. Por fim, o <code>else</code> atua como uma rota de fuga (ou rede de segurança), executando o seu bloco de código apenas quando <em>todas</em> as condições anteriores forem falsas.</p>"
+    }, {
+        "tipo": "code",
+        "titulo": "IfElse.c",
+        "texto": "#include <stdio.h> \n int main() { \n int idade = 20; \n printf(\"Avaliando a idade: %d anos\", idade); \n printf(\"Resultado: \"); \n if (idade < 12) { \n printf(\"Voce e uma crianca.\"); \n } \n else if (idade < 18) { \n printf(\"Voce e um adolescente.\"); \n } \n else if (idade < 60) { \n printf(\"Voce e um adulto.\"); \n } \n else { \n printf(\"Voce e um idoso.\"); \n } \n return 0; \n }"
+    }]
+},{
+
+"nomeSS": "For",
+"conteudo":[{
+"tipo":"p",
+"texto":"<p>Em C, o laço de repetição <strong>for</strong> é a estrutura ideal para quando você precisa executar um bloco de código várias vezes e sabe exatamente (ou consegue calcular) quantas repetições serão necessárias. Toda a \"regra\" da repetição fica organizada em uma única linha dentro dos parênteses, dividida em três partes separadas por ponto e vírgula (<code>;</code>): a <strong>inicialização</strong> (onde a variável contadora começa), a <strong>condição</strong> (o teste que define até quando o loop deve continuar rodando) e o <strong>incremento/decremento</strong> (o passo que o contador dá a cada rodada, como somar ou subtrair 1). Isso torna o código muito mais limpo e direto.</p>" },{
+
+"tipo":"code",
+"titulo":"For.c",
+"texto":"#include <stdio.h> \n int main() { \n printf(\"--- Contagem Progressiva ---\"); \n for (int i = 1; i <= 5; i++) { \n printf(\"Passo %d\", i); \n } \n printf(\"--- Contagem Regressiva ---\"); \n for (int i = 3; i > 0; i--) { \n printf(\"%d...\", i); \n } \n printf(\"FOGO!\"); \n return 0; \n }"
+
 }
+]
+
+},{
+
+"nomeSS":"While e Do while",
+"conteudo":[{
+
+"tipo":"p",
+"texto":"<p>Em C, os laços de repetição <strong>while</strong> (enquanto) e <strong>do while</strong> (faça enquanto) são usados para repetir um bloco de código enquanto uma condição for verdadeira, sendo perfeitos para situações onde você <em>não sabe</em> exatamente quantas repetições vão acontecer. A principal diferença entre eles é a ordem de verificação: o <code>while</code> testa a condição <strong>antes</strong> de entrar no laço (ou seja, pode ser que o código não rode nenhuma vez), enquanto o <code>do while</code> executa o bloco de código <strong>primeiro</strong> e só depois testa a condição, garantindo que o código seja executado pelo menos uma vez.</p>"
+},{
+
+"tipo":"code",
+"texto":"#include <stdio.h> \n int main() { \n int contador = 1; \n printf(\"--- Exemplo de While ---\"); \n while (contador <= 3) { \n printf(\"While repetindo: %d\", contador); \n contador++; \n } \n printf(\"--- Exemplo de Do While ---\"); \n int opcao; \n do { \n printf(\"Digite o numero 0 para sair do loop: \"); \n scanf(\"%d\", &opcao); \n } while (opcao != 0); \n printf(\"Você digitou 0. Programa encerrado!\"); \n return 0; \n }"
+
+}
+]
+
+},{
+
+"nomeSS":"Switch Case",
+"conteudo":[{
+
+"tipo":"p",
+"texto":"<p>Em C, a estrutura <strong>switch case</strong> é uma alternativa mais limpa, rápida e organizada ao uso de vários <code>else if</code> seguidos. Ela é ideal para situações onde você precisa testar o valor de uma única variável contra várias opções exatas (como opções de um menu). Cada opção é chamada de <strong>case</strong> (caso). Um detalhe crucial do switch é o comando <strong>break</strong>: ele serve para avisar o programa para sair da estrutura assim que encontrar e executar o caso correto. O switch também possui o <strong>default</strong> (padrão), que funciona como o <code>else</code>, sendo executado se nenhuma das opções anteriores for a correta.</p>"
+
+},{
+ 
+"tipo":"code",
+"titulo":"SwitchCase.c",
+"texto":"#include <stdio.h> \n int main() { \n int opcao = 2; \n printf(\"1 - Cafe\"); \n printf(\"2 - Cha\"); \n printf(\"3 - Suco\"); printf(\"Opcao selecionada: %d\", opcao); \n switch (opcao) { \n case 1: \n printf(\"Preparando o seu Cafe quentinho...\"); \n break; \n case 2: \n printf(\"Preparando o seu Cha...\"); \n case 3: \n printf(\"Preparando o seu Suco gelado...\"); \n break; \n default: \n printf(\"Erro: Opcao invalida! Por favor, escolha 1, 2 ou 3.\"); \n break; \n } \n return 0; \n }"  
+
+}
+]
+
+},{
+
+"nomeSS":"Definição",
+"conteudo":[{
+
+"tipo":"p",
+"texto":"<p>Em C, a <strong>definição de uma função</strong> é o momento em que você escreve o código real que dita exatamente o que aquela função vai fazer. Ela é composta por quatro partes essenciais: o <strong>tipo de retorno</strong> (qual tipo de dado ela vai devolver no final, como <code>int</code> ou <code>float</code>), o <strong>nome</strong> da função, os <strong>parâmetros</strong> (as variáveis que ela recebe para trabalhar, dentro dos parênteses) e o <strong>corpo</strong> da função, que é o bloco de código contido entre as chaves <code>{}</code>. Criar suas próprias funções é a melhor forma de dividir um programa grande e complexo em blocos menores, organizados e reutilizáveis.</p>"
+
+},{
+
+"tipo":"code",
+"titulo":"Definicao.c",
+"texto":"#include <stdio.h> \n int somar(int a, int b) { \n int resultado = a + b; \n return resultado; \n } \n int main() { \n int numero1 = 15; \n int numero2 = 25; \n int total = somar(numero1, numero2); \n printf(\"A soma de %d e %d e: %d\", numero1, numero2, total); \n printf(\"Outra soma direta: %d\", somar(100, 50)); \n return 0; \n }"
+
+}
+]
+
+
+},{
+
+"nomeSS":"Ponteiros",
+"conteudo":[{
+
+"tipo":"p",
+"texto":"<p>Em C, quando passamos uma variável para uma função comum, a linguagem faz uma <strong>passagem por valor</strong>: ela cria uma cópia do dado. Se a função alterar essa cópia, a variável original no <code>main</code> continua intacta. Para permitir que uma função altere diretamente a variável original, usamos <strong>ponteiros como parâmetros</strong>. Isso é chamado de <strong>passagem por referência</strong>: em vez de enviar o valor da variável, enviamos o seu <em>endereço de memória</em> (usando o <code>&amp;</code>). A função recebe esse endereço com um ponteiro (usando o <code>*</code>) e ganha acesso direto ao local onde o dado real está guardado, podendo modificá-lo permanentemente.</p>"
+},{
+
+"tipo":"code",
+"texto":"#include <stdio.h> \n void adicionarBonus(int *saldo) { \n *saldo = *saldo + 500; \n printf(\"--> Dentro da funcao: Bonus de 500 adicionado!\"); \n } \n int main() { \n int minhaConta = 1000; \n printf(\"Saldo ANTES de chamar a funcao: %d\", minhaConta); \n adicionarBonus(&minhaConta); \n printf(\"Saldo DEPOIS de chamar a funcao: %d\", minhaConta); \n return 0; \n }"
+
+}
+]
+
+},{
+
+"nomeSS":"Retorno de Valores",
+"conteudo":[{
+
+"tipo":"p",
+"texto":"<p>Em C, o <strong>retorno de valores</strong> é o mecanismo pelo qual uma função processa dados e entrega um resultado final de volta para a parte do programa que a chamou. Para isso, utilizamos a palavra-chave <strong>return</strong>. Quando o computador lê o comando <code>return</code>, a função é encerrada imediatamente — qualquer código abaixo dele é ignorado — e o valor especificado é \"jogado\" de volta para fora. É fundamental que o tipo do valor retornado (como um número inteiro ou decimal) seja exatamente o mesmo tipo que você prometeu na declaração da função (como <code>int</code> ou <code>float</code>).</p>"
+},{
+
+"tipo":"code",
+"titulo:":"RetornoValores.c",
+"texto":"#include <stdio.h> \n int calcularArea(int largura, int altura) { \n int area = largura * altura; \n return area; \n } \n int main() { \n int l = 5; \n int a = 10; \n int resultado = calcularArea(l, a); \n printf(\"A area do retangulo (%dx%d) e: %d\", l, a, resultado); \n printf(\"A area de um retangulo (3x4) e: %d\", calcularArea(3, 4)); \n return 0; \n }"
+
+}
+]
+
+},{
+
+"nomeS":"Matrizes",
+ "conteudo":[{
+
+    "tipo":"p",
+    "texto":"<p>Em C, uma <strong>matriz</strong> (ou array bidimensional) é como uma tabela ou grade organizada em linhas e colunas. Nos bastidores, a linguagem a trata como um \"array de arrays\". Ela é muito útil para representar planilhas, tabuleiros de jogos ou pixels de uma imagem. Para guardar, acessar ou modificar um elemento dentro de uma matriz, você sempre precisará fornecer dois índices: o primeiro indicando a <strong>linha</strong> e o segundo indicando a <strong>coluna</strong>.</p>"
+
+
+ },{
+
+    "tipo":"code",
+    "titulo":"Matrizes.c",
+    "texto":"#include <stdio.h> \n int main() { \n int matriz[2][3] = { \n {10, 20, 30}, \n {40, 50, 60} \n }; \n matriz[1][2] = 99; \n printf(\"Valor especifico (Linha 1, Coluna 2): %d\", matriz[1][2]); \n printf(\"--- Imprimindo toda a tabela ---\"); \n for (int linha = 0; linha < 2; linha++) { \n for (int coluna = 0; coluna < 3; coluna++) { \n printf(\"%d \", matriz[linha][coluna]); \n } \n for (int coluna = 0; coluna < 3; coluna++) { \n printf(\"%d \", matriz[linha][coluna]); \n } \n printf(\"\n\"); \n } \n return 0; \n }"
+
+ }
+]
+
+    },{
+
+    "nomeSS":"Geral",
+    "conteudo":[{
+
+    "tipo":"p",
+    "texto":"<p>Em C, as <strong>bibliotecas</strong> (ou <em>libraries</em>) são pacotes de códigos prontos e testados que resolvem problemas comuns, evitando que o programador precise \"reinventar a roda\". Em vez de escrever códigos complexos do zero para entender como o teclado funciona, como calcular uma raiz quadrada ou como medir o tamanho de um texto, você pega essas ferramentas emprestadas. Para usar uma biblioteca, utilizamos a diretiva <code>#include</code> no topo do arquivo. Ela importa um arquivo de cabeçalho (com a extensão <strong>.h</strong>, de <em>header</em>), que funciona como um \"cardápio\" avisando ao seu programa quais funções prontas estão disponíveis para uso.</p>"
+
+    }
+]
+
+    },{
+
+    "nomeSS":"Entrada e Saída",
+    "conteudo":[{
+
+    "tipo":"p",
+    "texto":"<p>Em C, <strong>&lt;stdio.h&gt;</strong> é uma abreviação para <em>Standard Input/Output</em> (Entrada e Saída Padrão). Ela é o arquivo de cabeçalho (header file) mais fundamental e utilizado da linguagem. Seu principal objetivo é fornecer as ferramentas necessárias para que o seu programa consiga se comunicar com o mundo exterior. Sem incluir essa biblioteca no topo do seu código usando o comando <code>#include</code>, o seu programa fica \"cego e mudo\", pois você perde o acesso a funções vitais de comunicação, como o <code>printf</code> (para exibir mensagens na tela), o <code>scanf</code> (para ler o teclado) e também comandos para manipular arquivos de texto no computador.</p>"
+        
+    },{
+      
+    "tipo":"code",
+    "titulo":"BibliotecaPrincipal.c",
+    "texto":"#include <stdio.h>"
+
+    }
+]
+    },{
+
+    "nomeSS":"Matemática",
+    "conteudo":[{
+
+    "tipo":"p",
+    "texto":"<p>Em C, a biblioteca <strong>&lt;math.h&gt;</strong> é o pacote padrão que fornece as funções necessárias para realizar cálculos matemáticos mais complexos que não podem ser resolvidos apenas com os operadores básicos (+, -, *, /). Ao incluí-la no seu código, você ganha acesso a ferramentas prontas para calcular raízes quadradas, potências, trigonometria (seno, cosseno), logaritmos e arredondamentos. Por padrão, a grande maioria das funções dessa biblioteca trabalha com números decimais de alta precisão, recebendo e retornando valores do tipo <code>double</code>.</p>"
+
+
+    },{
+
+    "tipo":"code",
+    "titulo":"Matematica.c",
+    "texto":"<math.h>"
+
+    }
+]
+
+    },{
+
+    "nomeSS":"Horário",
+    "conteudo":[{
+
+    "tipo":"p",
+    "texto":"<p>Em C, a biblioteca <strong>&lt;time.h&gt;</strong> fornece as ferramentas necessárias para trabalhar com datas, relógios e para medir intervalos de tempo. O computador não entende o tempo como nós (dias, meses e anos); ele geralmente conta o tempo como a quantidade de segundos que se passaram desde o dia 1º de janeiro de 1970 (um marco conhecido como <em>Era Unix</em> ou <em>Epoch</em>). A função principal dessa biblioteca é justamente capturar esse número gigante de segundos e oferecer funções para convertê-lo em um formato de calendário que seja legível para nós.</p>"
+    },{
+
+    "tipo":"code",
+    "titulo":"Horas",
+    "texto":"<time.h>"
+
+    }
+]
+
+    },{
+
+    },{
+
+    "nomeSS":"Suporte Booleano",
+    "conteudo":[{
+
+    "tipo":"p",
+    "texto":"<p>Em C, a biblioteca <strong>&lt;stdbool.h&gt;</strong> foi introduzida no padrão C99 para trazer oficialmente o conceito de variáveis lógicas para a linguagem. Antes dela, os programadores precisavam usar variáveis inteiras (<code>int</code>) para simular condições, lembrando mentalmente que <strong>0</strong> significava falso e <strong>1</strong> significava verdadeiro. Ao incluir essa biblioteca, seu código fica muito mais elegante e fácil de ler, pois ela \"ensina\" ao C as palavras-chave <code>bool</code> (o tipo da variável), <code>true</code> (verdadeiro) e <code>false</code> (falso).</p>"
+
+    },{
+
+    "tipo":"code",
+    "titulo":"Booleano",
+    "Texto":"<stdbool.h>"
+
+    }
+]  
+
+    },{
+
+    "nomeSS":"Inteiro",
+    "conteudo":[{
+
+    "tipo":"p",
+    "texto":"<p>Em C, os especificadores de formato <strong>%d</strong> (decimal) e <strong>%i</strong> (inteiro) são usados para trabalhar com variáveis do tipo <code>int</code>. Na hora de imprimir valores na tela usando o <code>printf</code>, eles são absolutamente idênticos e farão exatamente a mesma coisa: exibir o número na base 10. A verdadeira e única diferença entre eles acontece na hora de <em>capturar</em> dados com o <code>scanf</code>. O <code>%d</code> força o computador a ler a entrada estritamente como um número decimal comum. Já o <code>%i</code> é flexível e tenta adivinhar a base matemática do que foi digitado: se o usuário digitar algo começando com <code>0x</code>, o <code>%i</code> entende como hexadecimal (base 16); se começar apenas com <code>0</code>, ele entende como octal (base 8).</p>"
+
+    }
+]
+
+    },{
+
+    "nomeSS":"Número Decimal",
+    "conteudo":[{
+
+    "tipo":"p",
+    "texto":"<p>Em C, o especificador de formato <strong>%f</strong> (derivado de <em>\"float\"</em> ou \"ponto flutuante\") é a ferramenta padrão utilizada para trabalhar com números que possuem casas decimais (números quebrados ou reais). Ao usar o <code>printf</code>, o <code>%f</code> exibirá, por padrão, seis números após a vírgula. Uma de suas maiores vantagens é permitir que você controle exatamente o visual da impressão: colocando um ponto e um número entre o <code>%</code> e o <code>f</code> (como <code>%.2f</code>), você \"molda\" a saída para exibir apenas a quantidade desejada de casas decimais, o que é perfeito para exibir valores monetários, por exemplo.</p>"
+
+    }
+]
+
+    },{
+
+    "nomeSS":"Número Decimal Grande",
+    "conteudo":[{
+
+    "tipo":"p",
+    "texto":"<p>Em C, o especificador <strong>%lf</strong> significa <em>\"long float\"</em> (float longo) e é o par perfeito para trabalhar com variáveis do tipo <strong>double</strong>. Como o tipo <code>double</code> ocupa o dobro de espaço na memória e possui muito mais precisão matemática do que um <code>float</code> comum, o computador precisa saber exatamente quando está lidando com ele. A regra de ouro do <code>%lf</code> acontece na hora de capturar dados: no <code>scanf</code>, é <strong>obrigatório</strong> usar <code>%lf</code> para ler uma variável <code>double</code>. Se você usar apenas <code>%f</code> por engano, o computador fará a leitura com o tamanho errado e sua variável ficará cheia de \"lixo de memória\" (valores completamente absurdos).</p>"
+
+    }
+]
+
+    },{
+
+    "nomeSS":"Caracteres",
+    "conteudo":[{
+
+    "tipo":"p",
+    "texto":"<p>Em C, o especificador de formato <strong>%c</strong> (de <em>\"character\"</em>) é utilizado para trabalhar com variáveis do tipo <strong>char</strong>. Ele serve para ler ou imprimir <em>um único</em> caractere por vez, que pode ser uma letra, um número ou um símbolo (como 'A', '7' ou '@'). Na linguagem C, um caractere individual deve estar sempre envolvido por <strong>aspas simples</strong>. Nos bastidores, o computador não guarda a letra em si, mas sim um número inteiro correspondente a ela segundo a tabela ASCII (onde a letra 'A' vale 65, por exemplo). O maior desafio ao usar o <code>%c</code> ocorre na hora de capturar dados: ele é tão sensível que lê até mesmo os espaços em branco e a tecla \"Enter\" (quebra de linha) que sobraram na memória de leituras anteriores.</p>"
+       
+    }
+]
+
+    },{
+
+    "nomeSS":"Textos",
+    "conteudo":[{
+     
+    "tipo":"p",
+    "texto":"<p>Em C, o especificador de formato <strong>%s</strong> (de <em>\"string\"</em>, que significa cadeia de texto) é utilizado para ler ou imprimir textos e palavras completas. Como a linguagem C não possui um tipo de variável exclusivo para textos, uma string é criada usando um array (vetor) do tipo <code>char</code>. Nos bastidores, o computador lê as letras uma a uma até encontrar um caractere invisível chamado <strong>terminador nulo (<code> 0</code>)</strong>, que avisa onde a palavra termina. O uso do <code>%s</code> no <code>scanf</code> possui duas regras exclusivas e muito importantes: ele <strong>não precisa</strong> do símbolo <code>&amp;</code> (e comercial) e ele só consegue ler <em>uma única palavra</em> por vez, interrompendo a leitura assim que você digita o primeiro espaço.</p>"   
+
+    }
+]
+    
+
+    },{
+
+    "nomeSS":"Hello World",
+    "conteudo":[{
+    
+    "tipo":"p",
+    "texto":"<p>Em C, o famoso <strong>\"Hello, World!\"</strong> (Olá, Mundo!) é tradicionalmente o primeiro programa que qualquer pessoa escreve ao aprender uma nova linguagem. Seu objetivo não é resolver um problema complexo, mas sim testar se o seu ambiente de desenvolvimento e o seu compilador estão instalados e configurados corretamente. Além disso, ele introduz a \"espinha dorsal\" da linguagem, mostrando a estrutura mínima e obrigatória que <em>todo</em> programa em C precisa ter para funcionar: a inclusão de uma biblioteca de sistema, a função principal de onde o código começa a rodar e um comando para exibir texto na tela.</p>"
+
+    },{
+
+   "tipo":"code",
+    "titulo":"HelloWorld.c",
+    "texto":"#include <stdio.h> \n int main() { \n printf(\"Hello, World!\"); \n return 0; \n }"
+        
+    }
+    
+    
+]
+
+    },{
+
+    "nomeSS":"Somar dois números",
+    "conteudo":[{
+
+    "tipo":"p",
+    "texto":"<p>Em C, a <strong>soma de dois números</strong> é uma das operações mais básicas e serve como excelente introdução ao uso de operadores aritméticos e manipulação de variáveis. Para realizar essa operação, utilizamos o símbolo tradicional de adição (<code>+</code>). O fluxo clássico de um programa que faz cálculos simples segue sempre três etapas: a <strong>entrada</strong> de dados (onde capturamos os números do usuário com o <code>scanf</code>), o <strong>processamento</strong> (onde o computador faz a conta e guarda o resultado) e a <strong>saída</strong> (onde mostramos a resposta final na tela com o <code>printf</code>).</p>"
+
+    },{
+     
+    "tipo":"code",
+    "titulo":"SomarNumeros",
+    "texto":"#include <stdio.h> \n int main() { \n int numero1; \n int numero2; \n int soma; \n printf(\"Digite o primeiro numero: \"); \n scanf(\"%d\", &numero1); \n printf(\"Digite o segundo numero: \"); \n  scanf(\"%d\", &numero2); \n soma = numero1 + numero2; \n printf(\"A soma entre %d e %d e igual a: %d\", numero1, numero2, soma); \n return 0; \n }"
+
+    }
+]
+
+    },{
+
+    "nomeSS":"Contador com laço",
+    "conteudo":[{
+
+    "tipo":"p",
+    "texto":"<p>Em C, um <strong>contador</strong> é uma variável (geralmente do tipo <code>int</code>) usada dentro de uma estrutura de repetição (um laço) para registrar quantas vezes um bloco de código já foi executado. O contador precisa de três coisas fundamentais para funcionar corretamente: um <strong>valor inicial</strong> (de onde ele começa), uma <strong>condição limite</strong> (até onde ele deve ir) e um <strong>passo de incremento</strong> (de quanto em quanto ele aumenta ou diminui). Embora seja possível criar contadores com o <code>while</code>, a estrutura <strong>for</strong> (para) foi desenhada especificamente para isso, reunindo essas três regras em uma única e organizada linha de código.</p>"
+
+    },{
+
+    "tipo":"code",
+    "titulo":"ContadorLaco.c",
+    "texto":"#include <stdio.h> \n int main() { \n printf(\"--- Contador Progressivo (Laco FOR) ---\"); \n for (int i = 1; i <= 5; i++) { \n printf(\"A volta atual e a numero: %d\", i); \n } \n printf(\"--- Contador Regressivo (Laco WHILE) ---\"); \n int contador = 3; \n while (contador > 0) { \n printf(\"O foguete lanca em %d...\", contador); \n contador--; \n } \n printf(\"Decolar!\"); \n return 0; \n }"
+
+    }
+]
+
+    },{
+
+        "nomeS": "Leitura Recomendada",
+        "conteudo": {
+            "tipo":"p",
+            "texto": "Em breve..."
+        }
+    }  
 ]
