@@ -8,120 +8,68 @@
             "nomeS": "Tipos de Dados",
             "iconGMS": "terminal_2",
             "subSections": [{
-                "nomeSS": "Int"
-            }, {
-                "nomeSS": "Float"
-            }, {
-                "nomeSS": "String"
-            }, {
-                "nomeSS": "Bool"
-            }, {
-                "nomeSS": "Char"
-            },{
-                "nomeSS":"Void"
-            }
-            ]
+                "nomeSS": "Int" }, 
+            {   "nomeSS": "Float" },
+            {   "nomeSS": "String" },
+            {   "nomeSS": "Bool" },
+            {   "nomeSS": "Char" },
+            {   "nomeSS":"Void" }]
         },{
             "nomeS": "Estrutura de Dados",
             "iconGMS": "database",
             "subSections": [{
-                "nomeSS": "Array Dinâmico"
-            }, {
-                "nomeSS": "Array Fixo"
-            }, {
-                "nomeSS": "Tabelas Hash"
-            }
-            ]
+                "nomeSS": "Array Dinâmico" },
+            {   "nomeSS": "Array Fixo" },
+            {   "nomeSS": "Tabelas Hash" }]
         },{
-
-        "nomeS":"Entrada/Saída",
-        "subSections":[{
-
-        "nomeSS":"Printf"
+            "nomeS":"Entrada/Saída",
+            "iconGMS": "output",
+            "subSections":[{
+                "nomeSS":"Printf" },
+            {   "nomeSS":"Scanf"  }]
         },{
-        "nomeSS":"Scanf"
-        }
-        ]
-    
-
-        },{
-        "nomeS": "Controle de Fluxo",
+            "nomeS": "Controle de Fluxo",
+            "iconGMS": "arrow_split",
             "subSections": [{
-                "nomeSS": "If, else e else if"
-            }, {
-                "nomeSS": "For"
-            }, {
-                "nomeSS": "While e Do while"
-            }, {
-                "nomeSS": "Switch Case"
-            }
-            ]
-
+                "nomeSS": "If, else e else if" }, 
+            {   "nomeSS": "For" }, 
+            {   "nomeSS": "While e Do while" },
+            {   "nomeSS": "Switch Case" }]
         },{
-
-          "nomeS": "Funções",
+            "nomeS": "Funções",
+            "iconGMS": "function",
             "subSections": [{
-
-                "nomeSS": "Definição"
-            }, {
-                "nomeSS": "Ponteiros"
-            },{
-                "nomeSS": "Retorno de Valores"
-            }
-            ]
-
-
+                "nomeSS": "Definição" }, 
+            {   "nomeSS": "Ponteiros" },
+            {   "nomeSS": "Retorno de Valores" }]
         },{
-
-        "nomeS":"Matrizes"
-
+            "nomeS":"Matrizes",
+            "iconGMS": "table"
         },{
-
-
-        "nomeS": "Biblioteca",
-            "iconGMS": "Book",
-            "subSections": [{
-                "nomeSS": "Geral"
-            }, {
-                "nomeSS": "Entrada e Saída"
-            },{
-                "nomeSS": "Matemática"
-            }, {
-                "nomeSS": "Horário"
-            },{
-                "nomeSS": "Suporte Booleano"
-            }
-            ]
-
-
+            "nomeS": "Biblioteca",
+            "iconGMS": "library_books",
+                "subSections": [{
+                    "nomeSS": "Geral" },
+                {   "nomeSS": "Entrada e Saída" },
+                {   "nomeSS": "Matemática" },
+                {   "nomeSS": "Horário" },
+                {   "nomeSS": "Suporte Booleano" }]
         },{
-
-        "nomeS": "Formatos",
+            "nomeS": "Formatos",
             "iconGMS": "percent",
             "subSections": [{
-                "nomeSS": "Inteiro"
-            }, {
-                "nomeSS": "Número Decimal"
-            }, {
-                "nomeSS": "Número Decimal Grande"
-            }, {
-                "nomeSS": "Caracteres"
-            }, {
-                "nomeSS": "Textos"
-            }
-            ]  
-
+                "nomeSS": "Inteiro" },
+            {   "nomeSS": "Número Decimal" }, 
+            {   "nomeSS": "Número Decimal Grande" },
+            {   "nomeSS": "Caracteres" },
+            {   "nomeSS": "Textos"}]  
         },{
             "nomeS": "Exemplos",
             "iconGMS": "code_xml",
             "subSections":[{
-                "nomeSS": "Hello World"
-            }, {
-                "nomeSS": "Somar dois números"
-            }, {
-                "nomeSS": "Contador com laço"
-            }
-        ]
+                "nomeSS": "Hello World" },
+            {   "nomeSS": "Somar dois números" },
+            {   "nomeSS": "Contador com laço" }]
         },{
             "nomeS": "Dicas e Padrões",
             "iconGMS": "lightbulb"
