@@ -62,7 +62,8 @@ function getCalloutIcon(category) {
 		yes: 'check',
 		affirmative: 'check',
 		question: 'question_exchange',
-		bug: 'bug_report'
+		bug: 'bug_report',
+		baldi: 'calculate'
 	};
 
 	return icons[category] || category || 'info';
@@ -109,7 +110,8 @@ function getCalloutLabel(item) {
 		yes: 'Afirmativo',
 		affirmative: 'Afirmativo',
 		question: 'Questão',
-		bug: 'Bug'
+		bug: 'Bug',
+		baldi: 'Baldi'
 	};
 
 	return labels[item.categoria] || item.categoria;
@@ -358,6 +360,7 @@ function renderContent(selectionName) {
 	state.mainArea.replaceChildren(article);
 	setSelectedState(selectionLabel, selectionLabel);
 	hljs?.highlightAll?.();
+
 }
 
 function renderSelectionByPath(contentName, displayLabel) {
@@ -380,6 +383,10 @@ function renderSelectionByPath(contentName, displayLabel) {
 	state.mainArea?.append(article);
 	setSelectedState(getContentName(entry), label);
 	hljs?.highlightAll?.();
+
+	if (window.MathJax?.typesetPromise) {
+		MathJax.typesetPromise([article]).catch((err) => console.error('MathJax typeset error:', err));
+	}
 }
 
 function decorateNavigationMenu(root) {

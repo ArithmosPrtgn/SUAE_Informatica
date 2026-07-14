@@ -10,15 +10,15 @@
         --altWarningColor: hsl(32, 69%, 42%); 
         --surfaceWarningColor: hsl(32, 100%, 84%);
     
-    --tipColor: #c96dff;
+    --tipColor: hsl(278, 100%, 71%);
         --altTipColor: hsl(278, 69%, 42%);
         --surfaceTipColor: hsl(278, 100%, 84%);
     
-    --criticalColor: #ff6d6d;
+    --criticalColor: hsl(0, 100%, 71%);
         --altCriticalColor: hsl(0,69%, 42%);
         --surfaceCriticalColor: hsl(0, 100%, 84%);
 
-    --exampleColor: #6dffe7;
+    --exampleColor: hsl(169, 100%, 71%);
         --altExampleColor: hsl(169, 69%, 42%);
         --surfaceExampleColor: hsl(169, 100%, 84%);
 
@@ -33,6 +33,10 @@
     --bugColor: hsl(273, 100%, 71%);
         --altBugColor: hsl(273, 69%, 42%);
         --surfaceBugColor: hsl(273, 100%, 84%);
+
+    --mathColor: hsl(190, 100%, 71%);
+        --altMathColor: hsl(190, 69%, 42%);
+        --surfaceMathColor: hsl(190, 100%, 84%);
 
     --nonAccentColor: #fafafa;
         --invertedNonAccentColor: #050505;
@@ -76,6 +80,10 @@
     --bugColor: hsl(273, 69%, 42%);
         --altBugColor: hsl(273, 100%, 71%);
         --surfaceBugColor: hsl(273, 43%, 21%);
+
+    --mathColor: hsl(190, 69%, 42%);
+        --altMathColor: hsl(190, 100%, 71%);
+        --surfaceMathColor: hsl(190, 43%, 21%);
 
     --invertedNonAccentColor: #fafafa;
         --nonAccentColor: #050505;

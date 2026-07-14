@@ -305,6 +305,12 @@ footer {
     --calloutIconColor: var(--altBugColor);
 }
 
+.baldi {
+    --calloutSurfaceColor: var(--altMathColor);
+    --calloutSurfaceColor: var(--surfaceMathColor);
+    --calloutIconColor: var(--altMathColor);
+}
+
 .info, .info > div,
 .warning, .warning > div,
 .tip, .tip > div,
@@ -312,7 +318,8 @@ footer {
 .example, .example > div,
 .yes, .yes > div,
 .question, .question > div,
-.bug, .bug > div {
+.bug, .bug > div,
+.baldi, .baldi > div {
     border-color: var(--calloutBorderColor) !important;
     background-color: var(--calloutSurfaceColor);
 }
@@ -324,7 +331,8 @@ footer {
 .example > .backgroundCallOutIcon,
 .yes > .backgroundCallOutIcon,
 .question > .backgroundCallOutIcon,
-.bug > .backgroundCallOutIcon {
+.bug > .backgroundCallOutIcon,
+.baldi > .backgroundCallOutIcon {
     color: var(--calloutIconColor);
     opacity: 0.25;
     z-index: 0;
