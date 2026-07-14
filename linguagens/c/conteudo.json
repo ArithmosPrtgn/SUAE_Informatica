@@ -12,10 +12,6 @@
         "categoria": "yes",
         "titulo": "Características principais",
         "texto": "<ul><li>Tipagem estática: o tipo é declarado em tempo de compilação</li><li>Compilada: o código é traduzido diretamente para linguagem de máquina</li><li>Programação procedural: baseada em rotinas e funções (sem orientação a objetos)</li><li>Gerenciamento de memória manual com malloc e free</li><li>Linguagem muito <strong>próxima</strong> ao hardware</li></ul>"
-    }, {
-        "tipo": "image",
-        "fileLocation": "/resources/test/illSeeYouInHell.webp",
-        "caption": "hyperlaser rahhh"
     }
     ]
 }, {
@@ -27,11 +23,6 @@
             "tipo": "code",
             "titulo": "Int.c",
             "texto": "#include <stdio.h>\n int main() { \n int idade; \n idade = 25; \n printf(\"A idade informada é: %d anos \", idade); \n \n \n return 0;  \n \n \n }"
-    },{
-            "tipo": "callout",
-            "categoria": "baldi",
-            "titulo": "exemplo rahhh",
-            "texto": "\\[\\frac{67}{69} \\neq 1 \\]"
     },{
             "tipo": "callout",
             "categoria": "tip",
