@@ -128,7 +128,6 @@ option:not(option:last-of-type) { border-bottom: none; }
 
 body, html {
     margin: 0;
-    background: var(--nonAccentColor);
     color: var(--invertedNonAccentColor);
     font-family: "Inter", sans-serif;
     font-weight: 400;
@@ -412,7 +411,7 @@ footer {
 .codeBlock pre code.hljs {
     text-align: left;
     background: transparent !important;
-    padding: 0; /* Optional: removes default padding if you already added it to the <pre> */
+    padding: 0;
 }
 
 @media screen and (max-width: 350px){
@@ -421,7 +420,7 @@ footer {
 }
 
 table {
-    width: 75%;
+    width: 95%;
     background-color: var(--surfaceColor);
     border: 5px solid var(--accentColor);
     border-radius: 20px;
@@ -435,13 +434,13 @@ tr > th {
     background-color: var(--altAccentColor);
     border-bottom: 5px var(--nonAccentColor);
     color: var(--nonAccentColor);
-    padding: 10px 0;
+    padding: 10px 5px;
 }
 
 tr > td {
     background-color: var(--nonAccentColor);
     color: var(--invertedNonAccentColor);
-    padding: 10px 0;
+    padding: 10px 5px;
 }
 
 tr > th:first-child { border-radius: 15px 0 0 0; }
@@ -450,7 +449,39 @@ tr > th:last-child { border-radius: 0 15px 0 0; }
 tr:last-child > td:last-child { border-radius: 0 0 15px 0; }
 tr:last-child > td:first-child { border-radius: 0 0 0 15px ; }
 
-
-table:hover { transform: scale(1.05); border-width: 10px;}
+table:hover { transform: scale(1.05); border-width: 10px; border-radius: 25px;}
 
 .tabelaHeaderVert, .tabelaHeaderHor { width: 100%; display: flex; align-items: center; justify-content: center;}
+
+
+/*CREDS: https://www.sliderrevolution.com/resources/css-animated-background/*/
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, var(--nonAccentColor) 80%, var(--accentColor) 20%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
