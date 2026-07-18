@@ -1,0 +1,490 @@
+[
+{
+    "nomeS": "Introdução",
+    "conteudo": [{
+        "tipo": "p",
+        "texto": "<p>O <strong>Microsoft Windows</strong> é uma família de sistemas operacionais desenvolvidos pela Microsoft. Lançado originalmente em 1985, ele revolucionou a computação pessoal ao introduzir uma interface gráfica de usuário (GUI) intuitiva baseada em janelas (daí o nome \"Windows\"), substituindo as antigas telas de comandos em texto. Hoje, ele é o sistema operacional de desktop mais utilizado no mundo, oferecendo um ambiente multitarefa versátil que suporta uma vasta gama de aplicativos, jogos e ferramentas essenciais tanto para usuários domésticos quanto corporativos.</p>"
+    },{
+    
+    "tipo":"image",
+    "fileLocation":"/sistemasOperacionais/Windows/conteudoimagem/tiposWindows.jpg"
+    }
+    ]
+}, {
+    "nomeS": "Windows 1 a 3",
+    "conteudo": [{
+        "tipo": "h2",
+        "texto": "<strong> Windows 1.0 </strong>"
+    }, {
+        
+    "tipo":"p",
+    "texto":"<p>O <strong>Windows 1.0</strong>, lançado em 1985, não era um sistema operacional completo, mas sim uma interface gráfica que rodava sobre o MS-DOS. Ele introduziu o uso do mouse, menus suspensos e aplicativos clássicos como o Paint e o Notepad, mas tinha uma limitação marcante: as janelas não podiam se sobrepor, sendo organizadas apenas lado a lado (em mosaico).</p>"
+
+
+    }, {
+    
+    "tipo":"image",
+    "fileLocation":"/sistemasOperacionais/Windows/conteudoimagem/windows1.png" 
+
+    },{
+
+    "tipo":"h2",
+    "texto":"<strong> Windows 2.0 </strong>"
+
+    },{
+
+    "tipo":"p",
+    "texto":"<p>O <strong>Windows 2.0</strong> chegou ao mercado em 1987 e trouxe uma evolução crucial: o suporte a janelas sobrepostas. Essa versão também introduziu os primeiros atalhos de teclado, suporte a gráficos VGA mais avançados e viu o nascimento das primeiras versões dos softwares Word e Excel, tornando o ambiente muito mais prático para o trabalho.</p>"
+
+    },{
+
+    "tipo":"image",
+    "fileLocation":"/sistemasOperacionais/Windows/conteudoimagem/windows2.png" 
+        
+    },{
+
+    "tipo":"h2",
+    "texto":"<strong> Windows 3.0 </strong>"
+
+    },{
+
+    "tipo":"p",
+    "texto":"<p>O <strong>Windows 3.0</strong>, lançado em 1990, foi o primeiro grande sucesso comercial da linha. Com uma interface visual completamente reformulada, melhor gerenciamento de memória e suporte nativo ao processador Intel 386, ele permitia rodar múltiplos programas do MS-DOS em multitarefa real e ficou eternizado por trazer o popular jogo Paciência (Solitaire).</p>"
+
+    },{
+
+    "tipo":"image",
+    "fileLocation":"/sistemasOperacionais/Windows/conteudoimagem/windows3.png" 
+        
+
+    }
+]
+}, {
+    "nomeSS": "Windows 95 a Windows XP",
+    "conteudo":[{
+            "tipo": "h2",
+            "texto": "<strong> Windows 95 </strong>"
+        }, {
+
+        "tipo":"p",
+        "texto":"<p>O <strong>Windows 95</strong>, lançado em 1995, foi um marco histórico que definiu a experiência moderna no PC. Ele introduziu elementos icônicos que são o padrão até hoje, como o botão \"Iniciar\" e a Barra de Tarefas, além de trazer a tecnologia \"Plug and Play\" e suporte nativo a aplicativos de 32 bits, consolidando a transição definitiva do ambiente MS-DOS para a interface gráfica.</p>"
+        
+        },{
+
+        "tipo":"image",
+    "fileLocation":"/sistemasOperacionais/Windows/conteudoimagem/windows95.png" 
+
+        },{
+
+        "tipo":"h2",
+        "texto":"<strong> Windows 98 </strong>"
+        
+        },{
+
+        "tipo":"p",
+        "texto":"<p>O <strong>Windows 98</strong> (lançado em 1998) construiu sobre o sucesso do seu antecessor, focando fortemente na integração com a internet ao embutir o Internet Explorer diretamente no sistema. Esta versão também aprimorou significativamente o suporte a dispositivos USB, leitura de DVDs e suporte a múltiplos monitores, tornando o PC um verdadeiro centro de entretenimento.</p>"
+
+
+        },{
+
+         "tipo":"image",
+    "fileLocation":"/sistemasOperacionais/Windows/conteudoimagem/windows98.png" 
+
+
+        },{
+
+        "tipo":"h2",
+        "texto":"<strong> Windows ME </strong>"
+
+        },{
+
+        "tipo":"p",
+        "texto":"<p>O <strong>Windows ME (Millennium Edition)</strong>, lançado no ano 2000, foi a última versão baseada na antiga arquitetura do MS-DOS. Voltado para usuários domésticos, ele introduziu ferramentas multimídia pioneiras como o Windows Movie Maker e o importante recurso de Restauração do Sistema, embora tenha ficado marcado historicamente por problemas de instabilidade.</p>"
+
+        },{
+
+        "tipo":"image",
+    "fileLocation":"/sistemasOperacionais/Windows/conteudoimagem/windowsMe.png" 
+
+        },{
+
+        "tipo":"h2",
+        "texto":"<strong> Windows 2000 </strong>"
+
+        },{
+
+        "tipo":"p",
+        "texto":"<p>O <strong>Windows 2000</strong>, também lançado no ano 2000, foi direcionado ao mercado corporativo e construído sobre a robusta arquitetura NT (New Technology) da Microsoft. Diferente da linha doméstica da época, ele era altamente estável, seguro e eficiente, servindo como a ponte tecnológica que moldaria o futuro de todos os sistemas da empresa.</p>"
+
+        },{
+
+        "tipo":"image",
+    "fileLocation":"/sistemasOperacionais/Windows/conteudoimagem/windows2000.jpg" 
+
+        },{
+
+        "tipo":"h2",
+        "texto":"<strong> Windows XP </strong>"
+
+        },{
+
+        "tipo":"p",
+        "texto":"<p>O <strong>Windows XP</strong>, lançado em 2001, revolucionou ao unir o melhor dos dois mundos: a base ultraestável e segura do núcleo NT (herdada do Windows 2000) com um foco total no usuário doméstico. Apresentando uma interface visual totalmente renovada, colorida e amigável (conhecida como tema Luna), o XP entregou velocidade e confiabilidade, tornando-se um dos sistemas operacionais mais amados e longevos de todos os tempos.</p>"
+
+        },{
+
+         "tipo":"image",
+    "fileLocation":"/sistemasOperacionais/Windows/conteudoimagem/windowsXp.png" 
+
+        }
+    ]
+}, {
+    "nomeSS": "Windows Vista e Windows 7",
+    "conteudo": [
+        {
+            "tipo": "h2",
+            "texto": "<strong> Windows Vista </strong>"
+        }, {
+            
+        "tipo":"p",
+        "texto":"<p>O <strong>Windows Vista</strong>, lançado entre o final de 2006 e o início de 2007, trouxe uma reformulação visual drástica com a interface \"Aero\", que exibia janelas com efeito de vidro translúcido, gadgets na área de trabalho e belas animações. Ele também introduziu ferramentas de pesquisa muito mais rápidas e recursos rígidos de segurança, como o Controle de Conta de Usuário (UAC). No entanto, ficou marcado historicamente por ser um sistema muito pesado, exigindo computadores potentes para rodar bem, o que gerou muitas críticas na época.</p>"
+
+        }, {
+           
+        "tipo":"image",
+    "fileLocation":"/sistemasOperacionais/Windows/conteudoimagem/windowsVista.png"
+
+        },{
+
+        "tipo":"h2",
+        "texto":"<strong> Windows 7 </strong>"
+
+        },{
+
+        "tipo":"p",
+        "texto":"<p>O <strong>Windows 7</strong>, lançado em 2009, chegou para corrigir as falhas do seu antecessor e se tornou um sucesso estrondoso. Ele pegou a bela base visual do Vista e a otimizou profundamente, resultando em um sistema operacional leve, rápido e extremamente estável. Além disso, introduziu recursos muito práticos, como uma nova Barra de Tarefas (permitindo fixar ícones) e o \"Aero Snap\" para organizar janelas rapidamente, consolidando-se como um dos sistemas mais populares e adorados da história da Microsoft.</p>"
+
+        },{
+
+        "tipo":"image",
+    "fileLocation":"/sistemasOperacionais/Windows/conteudoimagem/windows7.png"
+
+
+        }
+    ]
+}, {
+    "nomeSS": "Windows 8 e Windows 8.1",
+    "conteudo" : [{
+        "tipo": "h2",
+        "texto": "<strong> Windows 8 </strong>"
+    }, {
+        
+    "tipo":"p",
+    "texto":"<p>O <strong>Windows 8</strong>, lançado em 2012, representou uma das mudanças visuais mais radicais e controversas da história da Microsoft. Tentando unificar a experiência entre computadores tradicionais e tablets, o sistema removeu o clássico Menu Iniciar e introduziu a \"Tela Iniciar\" (conhecida como interface Metro), focada em blocos dinâmicos e coloridos (Live Tiles) altamente otimizados para telas sensíveis ao toque. Embora trouxesse melhorias notáveis no desempenho e no tempo de inicialização, a mudança abrupta frustrou muitos usuários que dependiam exclusivamente de teclado e mouse.</p>"
+
+    },{
+
+    "tipo":"image",
+    "fileLocation":"/sistemasOperacionais/Windows/conteudoimagem/windows8.png"
+
+
+    },{
+
+    "tipo":"h2",
+    "texto":"<strong> Windows 8.1 </strong>"
+
+    },{
+
+    "tipo":"p",
+    "texto":"<p>O <strong>Windows 8.1</strong> chegou em 2013 como uma atualização gratuita, servindo como uma resposta direta às reclamações dos usuários sobre o seu antecessor. Ele trouxe de volta o botão Iniciar para a Barra de Tarefas, adicionou a opção muito solicitada de inicializar o computador diretamente na Área de Trabalho clássica (ignorando a interface de blocos) e aprimorou a pesquisa do sistema e a divisão de telas. Foi um passo importante para tentar reconciliar as inovações focadas em toque com a usabilidade tradicional dos PCs.</p>"
+
+    },{
+
+    "tipo":"image",
+    "fileLocation":"/sistemasOperacionais/Windows/conteudoimagem/windows81.png"
+
+
+    }
+    ]
+}, {
+    "nomeSS": "Windows 10 e Windows 11",
+    "conteudo": [{
+        "tipo": "h2",
+        "texto": "<strong> Windows 10 </strong>"
+    }, {
+        
+    "tipo":"p",
+    "texto":"<p>O <strong>Windows 10</strong>, lançado em 2015, corrigiu de vez as frustrações da versão anterior ao trazer de volta o adorado Menu Iniciar, agora mesclado com os blocos dinâmicos do Windows 8. Inaugurando a filosofia de \"Windows como um Serviço\" (recebendo grandes atualizações de recursos gratuitamente ao longo do tempo), ele introduziu a assistente virtual Cortana, o navegador Microsoft Edge e uma profunda integração com o ecossistema Xbox. Altamente estável, rápido e versátil, ele se tornou rapidamente o sistema operacional mais usado no mundo.</p>"
+
+    },{
+
+    "tipo":"image",
+    "fileLocation":"/sistemasOperacionais/Windows/conteudoimagem/windows10.png"
+
+
+    },{
+
+    "tipo":"h2",
+    "texto":"<strong> Windows 11 </strong>"
+
+    },{
+
+    "tipo":"p",
+    "texto":"<p>O <strong>Windows 11</strong>, lançado no final de 2021, focou em uma reformulação visual profunda para tornar a experiência mais limpa, moderna e relaxante. A maior mudança estética foi o Menu Iniciar e a Barra de Tarefas centralizados, além de janelas com cantos arredondados e acabamentos translúcidos. Voltado para a produtividade e o modelo de trabalho híbrido, introduziu os \"Snap Layouts\" para organizar múltiplas janelas com facilidade e integração nativa com o Microsoft Teams. O sistema também chamou a atenção por exigências de hardware mais rigorosas, como o requisito do chip de segurança TPM 2.0, garantindo assim um ambiente muito mais blindado contra ameaças.</p>"
+
+    },{
+
+    "tipo":"image",
+    "fileLocation":"/sistemasOperacionais/Windows/conteudoimagem/windows11.jpg"
+
+
+    }
+
+]
+}, { 
+    "nomeSS": "Gerenciador de tarefa",
+    "conteudo": [{
+        "tipo": "p",
+        "texto": "<p>O <strong>Gerenciador de Tarefas</strong> é uma ferramenta essencial e nativa do Windows que atua como o centro de monitoramento e controle do sistema. Acessado frequentemente pelo atalho clássico \"Ctrl + Shift + Esc\" ou através do \"Ctrl + Alt + Del\", ele permite aos usuários visualizar todos os programas e processos em execução no momento, sendo famoso por sua função de \"Finalizar Tarefa\" para forçar o fechamento de aplicativos travados. Além disso, ele evoluiu ao longo dos anos para oferecer gráficos detalhados de desempenho em tempo real sobre o uso do processador (CPU), memória RAM, disco e rede, além de permitir gerenciar facilmente quais aplicativos são abertos automaticamente na inicialização do computador.</p>"
+    }, {
+        "tipo": "image",
+         "fileLocation":"/sistemasOperacionais/Windows/conteudoimagem/gerenciadorTarefas.png"
+    }]
+}, {
+    "nomeSS": "Gerenciador de arquivos",
+    "conteudo": [{
+        "tipo": "p",
+        "texto": "<p>O <strong>Explorador de Arquivos</strong> (historicamente conhecido como Windows Explorer) é a ferramenta oficial do Windows para a navegação, organização e gerenciamento de pastas e documentos. Acessado rapidamente pelo atalho \"Windows + E\", ele permite aos usuários realizar tarefas essenciais do dia a dia, como copiar, mover, renomear, excluir e pesquisar arquivos em discos rígidos locais, pendrives ou na nuvem (através da integração com o OneDrive). Ao longo dos anos, o aplicativo evoluiu significativamente, ganhando recursos práticos como o painel de Acesso Rápido, a interface de faixas de opções (Ribbon) e, mais recentemente no Windows 11, o tão aguardado suporte à navegação por abas, facilitando ainda mais a organização digital.</p>"
+    },{
+    
+    "tipo": "image",
+         "fileLocation":"/sistemasOperacionais/Windows/conteudoimagem/gerenciadorArquivo.jpg"
+
+    }]
+}, {
+    "nomeSS": "Gerenciador de dispositvos",
+    "conteudo": [{
+        "tipo": "p",
+        "texto": "<p>O <strong>Gerenciador de Dispositivos</strong> é uma ferramenta avançada e nativa do Windows focada no controle e na solução de problemas de todo o hardware conectado ao computador. Ele exibe uma lista hierárquica e organizada por categorias de todos os componentes físicos reconhecidos pelo sistema, como placas de vídeo, adaptadores de rede, processadores e impressoras. Através dessa interface, os usuários podem atualizar, reverter ou desinstalar os drivers (os softwares que permitem que o sistema operacional se comunique com as peças), ativar ou desativar componentes específicos e identificar rapidamente falhas de reconhecimento ou peças com defeito, que costumam ser destacadas visualmente com um clássico pequeno triângulo amarelo de alerta.</p>"
+    }, {
+
+      "tipo": "image",
+         "fileLocation":"/sistemasOperacionais/Windows/conteudoimagem/gerenciadorDispositivo.jpg"
+  
+    }]
+}, {
+    "nomeSS": "Plano de fundo e cores",
+    "conteudo": [{
+        "tipo": "p",
+        "texto": "<p>A <strong>Personalização de Tela de Fundo e Cores</strong> é um painel de configurações do Windows que permite aos usuários adaptarem a estética do sistema aos seus gostos pessoais e necessidades de conforto. Através desse menu, é possível alterar o papel de parede da área de trabalho utilizando imagens próprias, cores sólidas, apresentações de slides ou o \"Destaque do Windows\", que traz fotografias renovadas diariamente pela internet. Além disso, a seção gerencia a identidade visual da interface, permitindo alternar entre o tradicional tema Claro e o moderno modo Escuro (Dark Mode) — excelente para reduzir o cansaço visual —, bem como definir uma \"cor de destaque\" personalizada que unifica o visual de botões, do Menu Iniciar, das bordas de janelas e da Barra de Tarefas.</p>"
+    }, {
+            
+        "tipo": "image",
+         "fileLocation":"/sistemasOperacionais/Windows/conteudoimagem/cores.png",
+         "caption":"Personalizar cores"
+
+    }, {
+    
+        "tipo": "image",
+         "fileLocation":"/sistemasOperacionais/Windows/conteudoimagem/planoFundo.png",
+         "caption":"Personalizar Plano de Fundo"
+
+
+    }]
+}, {
+    "nomeSS": "idioma e data e hora",
+    "conteudo": [{
+        "tipo": "p",
+        "texto": "<p>As configurações de <strong>Idioma, Data e Hora</strong> formam uma seção essencial do painel do Windows que permite adaptar o sistema operacional à região e às preferências linguísticas do usuário. Neste menu, é possível baixar novos pacotes de idiomas para traduzir toda a interface, adicionar diferentes layouts de teclado para digitação e definir padrões regionais para exibição de moedas e medidas. Além disso, a ferramenta oferece controle total sobre o relógio do computador, permitindo sincronizar a data e a hora automaticamente via internet, ajustar o fuso horário de acordo com a sua localização e personalizar a forma como o calendário e as horas são exibidos na Barra de Tarefas (como alternar entre o padrão de 12 ou 24 horas).</p>"
+    }, {
+        
+        "tipo": "image",
+         "fileLocation":"/sistemasOperacionais/Windows/conteudoimagem/idioma.png",
+         "caption":"Personalizar idioma"
+
+    }, {
+       
+        "tipo": "image",
+         "fileLocation":"/sistemasOperacionais/Windows/conteudoimagem/horas.png",
+         "caption":"Personalizar horas"
+
+    }]
+}, { 
+    "nomeSS": "instalar e remover programas",
+    "conteudo": [{
+        "tipo": "p",
+        "texto": "<p>O painel de <strong>Aplicativos e Recursos</strong> (tradicionalmente conhecido como \"Adicionar ou Remover Programas\") é a central de gerenciamento de software do Windows. Através desta seção nas configurações, os usuários podem visualizar uma lista completa de todos os programas, aplicativos e jogos instalados no computador, com opções para filtrar e classificar por nome, tamanho ou data. É a ferramenta oficial e mais segura para desinstalar softwares que não são mais necessários, pois garante que os arquivos e chaves de registro associados sejam removidos corretamente do sistema. Além da desinstalação, a ferramenta também permite reparar aplicativos que não estão funcionando bem, modificar instalações existentes e gerenciar recursos opcionais do sistema operacional.</p>"
+    }, {
+        
+        "tipo": "image",
+         "fileLocation":"/sistemasOperacionais/Windows/conteudoimagem/desinstalarPrograma.png",
+         "caption":"desinstalar programas"
+
+    }]
+}, { 
+    "nomeSS": "Gerenciador de usuários",
+    "conteudo": [{
+        "tipo": "p",
+        "texto": "<p>O <strong>Gerenciamento de Contas de Usuário</strong> é a seção do Windows dedicada a organizar e proteger quem tem acesso ao computador. Localizado nas configurações de \"Contas\", ele permite que várias pessoas compartilhem a mesma máquina física de forma totalmente independente, mantendo arquivos, preferências visuais e históricos de navegação isolados em perfis individuais. Através desse painel, é possível criar novas contas (locais ou vinculadas a uma Conta Microsoft), gerenciar opções de família para controle parental, definir níveis de privilégios de segurança (escolhendo quem será um Usuário Padrão ou um Administrador com poder para alterar o sistema) e configurar métodos de login modernos e seguros, como PINs, reconhecimento facial ou leitura de impressão digital através da tecnologia Windows Hello.</p>"
+    }, {
+
+         "tipo": "image",
+         "fileLocation":"/sistemasOperacionais/Windows/conteudoimagem/usuarios.jpg"
+  
+
+    }]
+
+},{
+
+    "nomeSS": "Gerenciador de disco",
+    "conteudo": [{
+    "tipo": "p",
+    "texto":"<p>O <strong>Gerenciamento de Disco</strong> é um utilitário administrativo avançado do Windows focado no controle e na organização estrutural das unidades de armazenamento conectadas ao computador, como HDDs, SSDs e pendrives. Diferente do Explorador de Arquivos, que lida com a navegação de pastas, esta ferramenta trabalha diretamente com as partições e os sistemas de arquivos. Através de sua interface, os usuários podem formatar unidades, inicializar discos rígidos novos para que sejam reconhecidos pelo sistema, atribuir ou alterar letras de unidades (como o famoso disco \"C:\") e realizar operações detalhadas em partições, permitindo criar, expandir, reduzir ou excluir volumes de armazenamento sem a necessidade de softwares de terceiros.</p>"
+
+    },{
+
+         "tipo": "image",
+         "fileLocation":"/sistemasOperacionais/Windows/conteudoimagem/gerenciamentoDisco.png"
+  
+
+    }
+]
+
+},{
+
+
+    "nomeSS": "Backup e restauração",
+    "conteudo": [{
+    "tipo": "p",
+    "texto":"<p>As ferramentas de <strong>Backup e Restauração</strong> reúnem os recursos de segurança do Windows focados em proteger os dados do usuário e a integridade do sistema contra falhas de hardware, vírus (como ransomwares) ou exclusões acidentais. O sistema oferece múltiplas soluções para garantir essa proteção: o \"Histórico de Arquivos\" para salvar cópias automáticas de documentos importantes em unidades externas, o moderno aplicativo \"Windows Backup\" com sua forte integração de sincronização na nuvem via OneDrive, e a clássica \"Restauração do Sistema\". Esta última é especialmente útil, pois cria pontos de retorno (como uma \"máquina do tempo\" do PC) que permitem reverter atualizações ou configurações problemáticas do sistema operacional para um estado anterior, tudo isso sem apagar os seus arquivos pessoais.</p>"
+
+
+    },{
+
+        "tipo": "image",
+         "fileLocation":"/sistemasOperacionais/Windows/conteudoimagem/restauracao.png"
+  
+
+    }
+]
+
+},{
+
+"nomeSS": "Atualização do sistema",
+    "conteudo": [{
+    "tipo": "p",
+    "texto":"<p>O <strong>Windows Update</strong> (Atualizações do Sistema) é o serviço nativo dedicado a manter o computador seguro, estável e com as tecnologias mais recentes. Trabalhando de forma silenciosa em segundo plano, ele é responsável por baixar e instalar automaticamente correções vitais de segurança contra ameaças digitais, melhorias de desempenho, novos recursos para o sistema operacional e até mesmo atualizações de drivers de hardware essenciais. Através do seu painel nas configurações, o usuário não apenas verifica ativamente a disponibilidade de novos pacotes, mas também ganha flexibilidade para gerenciar o processo, podendo pausar as atualizações temporariamente ou agendar um horário específico para a reinicialização da máquina, garantindo que o seu trabalho não seja interrompido de surpresa.</p>"
+    }
+]
+
+},{
+
+    "nomeSS": "Listar arquivos",
+    "conteudo": [{
+    "tipo": "p",
+    "texto":"<p>Para listar arquivos e pastas no <strong>Terminal do Windows</strong> (seja no clássico Prompt de Comando ou no moderno PowerShell), o comando padrão e mais utilizado é o <strong><code>dir</code></strong>. Ao digitar essa instrução e pressionar \"Enter\", o sistema exibe o conteúdo completo do diretório atual, mostrando detalhes importantes como o nome, a extensão, o tamanho e a data da última modificação de cada item. Caso você esteja utilizando o PowerShell, o sistema também oferece suporte ao comando <strong><code>ls</code></strong> (um atalho popular herdado dos sistemas baseados em Linux e macOS), que funciona de maneira idêntica para visualizar rapidamente a lista de arquivos via linha de comando.</p>"
+    },{
+
+    "tipo":"code",
+    "titulo":"Terminal do Windows",
+    "texto":"dir"
+
+    }
+]
+
+},{
+
+"nomeSS": "Navegar entre pastas",
+    "conteudo": [{
+    "tipo": "p",
+    "texto":"<p>Para navegar entre as pastas no <strong>Terminal do Windows</strong> (Prompt de Comando ou PowerShell), o comando essencial é o <strong><code>cd</code></strong> (que significa \"change directory\" ou mudar de diretório). Para acessar uma pasta específica, basta digitar <code>cd</code> seguido do nome do destino (por exemplo, <code>cd Documentos</code>) — e caso o nome contenha espaços, é necessário utilizar aspas, como em <code>cd \"Meus Arquivos\"</code>. Quando precisar voltar um nível, ou seja, retornar para a pasta anterior, utiliza-se o comando <strong><code>cd ..</code></strong> (com dois pontos), enquanto o comando <strong><code>cd \"\\</code></strong> atua como um atalho rápido para retornar diretamente à raiz do disco rígido atual (como a unidade \"C:\").</p>"
+    },{
+
+    "tipo":"code",
+    "titulo":"Terminal do Windows",
+    "texto":"cd NomedaPasta"
+
+    }
+]
+
+},{
+
+    "nomeSS": "Criar diretórios",
+    "conteudo": [{
+    "tipo": "p",
+    "texto":"<p>Para criar novos diretórios (ou pastas) diretamente pelo <strong>Terminal do Windows</strong> (Prompt de Comando ou PowerShell), o comando principal utilizado é o <strong><code>mkdir</code></strong> (abreviação de \"make directory\") ou sua versão mais curta, <strong><code>md</code></strong>. A sintaxe é muito simples: basta digitar o comando seguido do nome que deseja dar à pasta, como por exemplo <code>mkdir Projetos</code>. Caso o nome escolhido contenha espaços, é obrigatório envolvê-lo em aspas, como em <code>mkdir \"Meus Projetos\"</code>. Uma funcionalidade muito prática desse comando é a capacidade de criar uma árvore inteira de subpastas de uma só vez; basta digitar o caminho completo da estrutura desejada para que o sistema crie todas as pastas ausentes no trajeto simultaneamente.</p>"
+    },{
+
+    "tipo":"code",
+    "titulo":"Terminal do Windows",
+    "texto":"mkdir NomePasta"
+
+    }
+]
+
+},{
+
+"nomeSS": "Copiar, mover e deletar",
+    "conteudo": [{
+    "tipo": "p",
+    "texto":"<p>Para o gerenciamento de arquivos e pastas no <strong>Terminal do Windows</strong> (Prompt de Comando ou PowerShell), existem comandos específicos para copiar, mover e deletar. Para fazer cópias, utiliza-se o comando <strong><code>copy</code></strong> seguido do nome do arquivo e do caminho de destino (exemplo: <code>copy foto.jpg C:\\Backup\"</code>), enquanto para copiar pastas inteiras recomenda-se o <strong><code>xcopy</code></strong> ou o mais robusto <strong><code>robocopy</code></strong>. Para transferir itens de um local para outro, o comando <strong><code>move</code></strong> é o escolhido, utilizando a mesma lógica de origem e destino. Na hora da exclusão, utiliza-se o <strong><code>del</code></strong> para apagar arquivos individuais e o <strong><code>rmdir</code></strong> (ou <strong><code>rd</code></strong>) para remover diretórios inteiros. Vale destacar que, se você estiver utilizando o moderno PowerShell, o sistema também aceita atalhos clássicos do universo Linux, como <strong><code>cp</code></strong> para copiar, <strong><code>mv</code></strong> para mover e <strong><code>rm</code></strong> para deletar itens de forma rápida e prática.</p>"
+    },{
+
+    "tipo":"code",
+    "titulo":"Terminal do Windows",
+    "texto":"copy=copiar arquivo \n xcopy=copiar pastas inteiras \n move= mover arquivos \n del= deletar arquivos \n rmdir= remover diretorios "
+
+    }
+]
+
+},{
+
+    "nomeS":"Atalhos",
+    "conteudo":[{
+    "tipo":"h2",
+    "texto":"<strong> Atalhos Globais e Produtividade </strong>"
+
+    },{
+
+    "tipo": "tabelaHeaderVert",
+        "heads": ["atalho", "função"],
+        "itens": [["win+D","Minimizar janelas"], ["alt+tab", "Alternar entre páginas mais rápido"], ["win+E","Abre o explorador de arquivos"], ["win+i","Abre a janela de Configurações do sistema."], ["win+L"," Bloqueia o computador instantaneamente"]]
+
+    },{
+
+    "tipo":"h2",
+    "texto":"<strong> Atalhos de Edição e Navegação </strong>"
+
+    },{
+
+        "tipo": "tabelaHeaderVert",
+        "heads": ["atalho", "função"],
+        "itens": [["Ctrl+C","Copia o item ou texto selecionado"], ["ctrl+V", "Cola o item copiado"], ["Ctrl+Z","Desfazer a última ação (salva vidas quando você apaga algo sem querer)"], ["Ctrl+A","Seleciona todos os itens ou textos de uma página"], ["Alt+F4","Fecha a janela ou o programa ativo"]]
+
+
+    }
+]
+
+},{
+    "nomeS": "Dicas e Padrões",
+    "conteudo" :[{
+    "tipo":"p",
+    "texto":"Em breve..."
+    }
+]
+    },{
+        "nomeS": "Leitura Recomendada",
+        "conteudo": {
+            "tipo":"p",
+            "texto": "Em breve..."
+    }
+},{
+
+        "nomeS": "Tutorial de instalação",
+        "conteudo": {
+            "tipo":"p",
+            "texto": "Em breve..."
+    }
+
+}
+]
