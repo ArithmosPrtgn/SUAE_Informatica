@@ -248,7 +248,7 @@
         "texto": "<p>O <strong>Gerenciador de Tarefas</strong> é uma ferramenta essencial e nativa do Windows que atua como o centro de monitoramento e controle do sistema. Acessado frequentemente pelo atalho clássico \"Ctrl + Shift + Esc\" ou através do \"Ctrl + Alt + Del\", ele permite aos usuários visualizar todos os programas e processos em execução no momento, sendo famoso por sua função de \"Finalizar Tarefa\" para forçar o fechamento de aplicativos travados. Além disso, ele evoluiu ao longo dos anos para oferecer gráficos detalhados de desempenho em tempo real sobre o uso do processador (CPU), memória RAM, disco e rede, além de permitir gerenciar facilmente quais aplicativos são abertos automaticamente na inicialização do computador.</p>"
     }, {
         "tipo": "image",
-         "fileLocation":"/sistemasOperacionais/Windows/conteudoimagem/gerenciadorTarefas.png"
+         "fileLocation":"/sistemasOperacionais/Windows/conteudoimagem/gerenciadorTarefa.png"
     }]
 }, {
     "nomeSS": "Gerenciador de arquivos",
