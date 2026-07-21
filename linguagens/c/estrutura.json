@@ -76,6 +76,11 @@
         }, {
             "nomeS": "Leitura Recomendada",
             "iconGMS": "book"
+        },{
+
+        "nomeS":"Tutorial de instalação do gcc"
+        
         }
+        
     ]
 }

@@ -1,4 +1,4 @@
-# Leia-me antes de usar ou ver o SUAE
+# Leia-me antes de usar ou ver o PROOT Informática
 
 Esse projeto é da disciplina Projeto de Extensão I e II do ano de 2026 com os professores responsáveis sendo Lorena T Boechat e Marcos Celso Rodrigues
 
@@ -13,6 +13,6 @@ O site ainda está em desenvolvimento, mas a proposta do projeto é criar um mat
 
 O HTML principal (index.html) foi desenvolvido por Luiz Carlos Franco e funciona como o menu principal do site, permitindo que o usuário escolha sua área de estudo e navegue pelo conteúdo.
 
-Já os HTMLs secundários (index/nome-da-opcao.html) foram desenvolvidos por David Delgado,Cauê Shishido e Luiz Carlos Franco com o objetivo de proporcionar uma experiência de aprendizado prática e acessível para os usuários.
+Já os HTMLs secundários (index/nome-da-opcao.html) foram desenvolvidos por Cauê Shishido e Luiz Carlos Franco com o objetivo de proporcionar uma experiência de aprendizado prática e acessível para os usuários.
 
-não será tolerado o uso sem autorização do site ou a engenharia reversa para modificações sem consultar David Delgado, Cauê Shishido e Luiz Carlos Franco
+não será tolerado o uso sem autorização do site ou a engenharia reversa para modificações sem consultar Cauê Shishido e Luiz Carlos Franco

@@ -1,0 +1,62 @@
+{
+    "tituloPrincipal": "Windows",
+    "iconeLoc": "/resources/ico/c/windows.svg",
+    "secao": [{
+            "nomeS": "Introdução",
+            "iconGMS": "play_arrow"
+        },{
+            "nomeS": "Versões do Windows",
+            "subSections": [{
+                "nomeSS": "Windows 1 a 3" }, 
+            {   "nomeSS": "Windows 95 a Windows XP" },
+            {   "nomeSS": "Windows Vista e Windows 7" },
+            {   "nomeSS": "Windows 8 e Windows 8.1" },
+            {   "nomeSS": "Windows 10 e Windows 11" }
+            ]
+        },{
+            "nomeS": "Gerenciadores do sistema",
+            "subSections": [{
+                "nomeSS": "Gerenciador de tarefa" },
+            {   "nomeSS": "Gerenciador de arquivos" },
+            {   "nomeSS": "Gerenciador de dispositvos"}
+        ]
+        },{
+            "nomeS":"Personalização",
+            "subSections":[{
+                "nomeSS":"Plano de fundo e cores" },
+            {   "nomeSS":"idioma e data e hora"  },
+            {   "nomeSS": "instalar e remover programas"}
+        
+        ]
+        },{
+            "nomeS": "Tarefas admnistrativas",
+            "subSections": [{
+                "nomeSS": "Gerenciador de usuários" }, 
+            {   "nomeSS": "Gerenciador de disco" }, 
+            {   "nomeSS": "Backup e restauração" },
+            {   "nomeSS": "Atualização do sistema" }]
+        },{
+            "nomeS": "Console de Comando",
+            "subSections": [{
+                "nomeSS": "Listar arquivos" }, 
+            {   "nomeSS": "Navegar entre pastas" },
+            {   "nomeSS": "Criar diretórios" },
+            {   "nomeSS": "Copiar, mover e deletar"}
+        
+        ]
+        },{
+            "nomeS":"Atalhos"
+        },{
+            "nomeS": "Dicas e Padrões",
+            "iconGMS": "lightbulb"
+        }, {
+            "nomeS": "Leitura Recomendada",
+            "iconGMS": "book"
+        },{
+
+        "nomeS":"Tutorial de instalação"
+        
+        }
+        
+    ]
+}
