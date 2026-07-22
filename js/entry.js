@@ -1,1 +1,17 @@
-import './partFetch/fetchNavSp.js'; import './articleContent/index.js'; import './hamburguerMenu/index.js'; import './anim/detailsOpenClose.js'; import './copyButton/copy.js'; import './search/index.js'; import './a11y/index.js';
+import './partFetch/fetchNavSp.js';
+import './partFetch/fetchNav.js';
+import './partFetch/fetchNavSobre.js';
+import './partFetch/fetchFooter.js';
+import './articleContent/index.js';
+import './hamburguerMenu/index.js';
+import './anim/detailsOpenClose.js';
+import './copyButton/copy.js';
+import './search/index.js';
+import './a11y/index.js';
+import './anim/detailsOpenClose.js'
+import './anim/detailsOpenCloseHeader.js'
+import './darkMode/forNavSp.js';
+import './darkMode/index.js'
+import './darkMode/themeToggle.js';
+import './saveAs/index.js';
+import './search/index.js';

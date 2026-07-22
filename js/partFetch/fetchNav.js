@@ -1,4 +1,8 @@
 document.addEventListener("DOMContentLoaded", async () => {
+  const mountPoint = document.getElementById("NavS");
+
+  if (!mountPoint) { return;}
+
   try {
     const res = await fetch("/sitewide/nav/nav.html");
 
@@ -14,15 +18,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       throw new Error("Cadê o <nav>?");
     }
 
-    const mountPoint = document.getElementById("NavLoL");
-
-    if (mountPoint) {
-      mountPoint.replaceWith(...navElements);
-      document.dispatchEvent(new Event("headerLoaded"));
-      return;
-    }
-
-    document.body.append(...navElements);
+    mountPoint.replaceWith(...navElements);
     document.dispatchEvent(new Event("headerLoaded"));
   } catch (error) {
     console.error("Erro ao carregar nav:", error);

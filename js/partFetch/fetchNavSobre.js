@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       throw new Error("Cadê o <nav>?");
     }
 
-    const mountPoint = document.getElementById("NavLoL");
+    const mountPoint = document.getElementById("NavO");
 
     if (mountPoint) {
       mountPoint.replaceWith(...navElements);
