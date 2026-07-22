@@ -1,5 +1,5 @@
 (function () {
-	if (window.SUAESaveAs) {
+	if (window.PROOTSaveAs) {
 		return;
 	}
 
@@ -130,5 +130,5 @@
 		button.addEventListener('click', printMainAreaAsPdf);
 	}
 
-	window.SUAESaveAs = { attach };
+	window.PROOTSaveAs = { attach };
 })();

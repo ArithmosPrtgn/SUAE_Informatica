@@ -19,7 +19,7 @@
   function tryInit() {
     if (ready) return;
     const input = document.getElementById('search');
-    if (!input || !window.SUAEArticlePage) return;
+    if (!input || !window.PROOTArticlePage) return;
 
     ready = true;
     observer.disconnect();
@@ -62,7 +62,7 @@
   }
 
   function buildIndex() {
-    const state = window.SUAEArticlePage.getState();
+    const state = window.PROOTArticlePage.getState();
     const content = state.content || [];
     const index = [];
     let currentSection = null;
@@ -174,8 +174,8 @@
         <span class="searchResultText">${highlight(snippet, query)}</span>
       `;
       el.addEventListener('click', () => {
-        window.SUAEArticlePage.renderSelection(r.contentName, r.displayLabel);
-        window.SUAEHamburgerMenu?.close?.();
+        window.PROOTArticlePage.renderSelection(r.contentName, r.displayLabel);
+        window.PROOTHamburgerMenu?.close?.();
         resultsBox.classList.add('hidden');
         searchInput.value = '';
         window.scrollTo({ top: 0, behavior: 'smooth' });

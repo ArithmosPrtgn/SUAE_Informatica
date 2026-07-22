@@ -1,4 +1,7 @@
 #access {
+    position: fixed;
+    top: 10%;
+    left: 20%;
     width: 60vw;
     min-width: 320px;
     min-height: 70vh;
@@ -6,6 +9,14 @@
     border-radius: 50px;
     padding: 30px;
     z-index: 1002;
+    transform: scale(0.5);
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    opacity: 0;
+}
+
+#access.appears {
+    transform: scale(1);
+    opacity: 1;
 }
 
 #access > div {

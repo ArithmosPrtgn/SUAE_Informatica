@@ -1,0 +1,22 @@
+{
+  "name": "pttp",
+  "version": "1.0.0",
+  "description": "Esse projeto é da disciplina Projeto de Extensão I e II do ano de 2026 com os professores responsáveis sendo Lorena T Boechat e Marcos Celso Rodrigues",
+  "main": "index.js",
+  "scripts": { "build": "eleventy", "serve": "eleventy --serve" },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArithmosPrtgn/SUAE_Informatica.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/ArithmosPrtgn/SUAE_Informatica/issues"
+  },
+  "homepage": "https://github.com/ArithmosPrtgn/SUAE_Informatica#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6"
+  }
+}

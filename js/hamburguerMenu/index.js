@@ -1,4 +1,4 @@
-const hamburgerMenuUrl = '/hamburgerMenu.html';
+const hamburgerMenuUrl = '/sitewide/hb/hamburgerMenu.html';
 let hamburgerMenuRoot = null;
 let hamburgerMenuLoading = false;
 
@@ -32,8 +32,18 @@ function ensureSaveAsHelper() {
 		window.__PROOTSaveAsPromise = new Promise((resolve, reject) => {
 			const script = document.createElement('script');
 			script.src = saveAsHelperUrl;
-			script.onload = () => resolve(window.PROOTSaveAs);
-			script.onerror = () => reject(new Error('Save-as helper failed to load'));
+			script.onload = () => {
+				if (window.PROOTSaveAs) {
+					resolve(window.PROOTSaveAs);
+				} else {
+					window.__PROOTSaveAsPromise = null;
+					reject(new Error('saveAs script loaded but did not set window.PROOTSaveAs'));
+				}
+			};
+			script.onerror = () => {
+				window.__PROOTSaveAsPromise = null;
+				reject(new Error('Save-as helper failed to load'));
+			};
 			document.head.append(script);
 		});
 	}
