@@ -9,6 +9,7 @@ export default function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy('informaticaVida');
 	eleventyConfig.addPassthroughCopy('linguagens');
 	eleventyConfig.addPassthroughCopy('sistemasOperacionais');
+		eleventyConfig.addPassthroughCopy('sobre');
 	eleventyConfig.addPassthroughCopy('sitewide');
 
 	return {

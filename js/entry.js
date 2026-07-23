@@ -8,6 +8,7 @@ import './anim/detailsOpenClose.js';
 import './copyButton/copy.js';
 import './search/index.js';
 import './a11y/index.js';
+import './a11y/textSize/index.js';
 import './anim/detailsOpenClose.js'
 import './anim/detailsOpenCloseHeader.js'
 import './darkMode/forNavSp.js';

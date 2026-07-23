@@ -1,8 +1,32 @@
-h1, h2, h3, h4, h5, h6,label, input, button { color: var(--invertedNonAccentColor); }
+:root { --text-scale: 1}
+
+/*Acessibilidade - Sem animações */
+:root.a11y-no-animations *,
+:root.a11y-no-animations *::before,
+:root.a11y-no-animations *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+}
+
+:root.a11y-high-contrast button,
+:root.a11y-high-contrast input,
+:root.a11y-high-contrast select {
+    outline: 2px solid var(--nonAccentColor) !important;
+}
+
+h1, h2, h3, h4, h5, h6,label, input, button { 
+    color: var(--invertedNonAccentColor);
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: break-word; 
+    hyphens: auto;
+}
 
 h1 {
     font-family: 'Cal Sans', sans-serif;
-    font-size: clamp(2rem, 4vw, 3rem);
+    font-size: calc(clamp(2rem, 4vw, 3rem) * var(--text-scale));
     margin: 5px 0 0 0;
     line-height: 1.2;
     font-weight: 700;
@@ -10,27 +34,30 @@ h1 {
 
 h2 {
     margin: 5px 0 0 0;
-    font-size: clamp(1.5rem, 3vw, 2rem); 
+    font-size: calc(clamp(1.5rem, 3vw, 2rem) * var(--text-scale)); 
     line-height: 1.2;
     font-weight: 700;
 }
 
 h3 {
-    font-size: clamp(1.1rem, 1.8vw, 1.5rem);
+    font-size: calc(clamp(1.1rem, 1.8vw, 1.5rem) * var(--text-scale));
     line-height: 1.25;
     font-weight: 600;
     margin: 0;
 }
 
 h4 {
-    font-size: clamp(0.8rem, 1.3vw, 1.1rem);
+    font-size: calc(clamp(0.8rem, 1.3vw, 1.1rem) * var(--text-scale));
     line-height: 1.3;
     font-weight: 500;
     margin: 0;
 }
 
+h5 { font-size: calc(clamp(0.6rem, 1.1vw, 0.9rem)  * var(--text-scale));}
+h6 { font-size: calc(clamp(0.4rem, 0.9vw, 0.7rem)  * var(--text-scale));}
+
 p {
-    font-size: clamp(0.9rem, 1.25vw, 1rem);
+    font-size: calc(clamp(0.9rem, 1.25vw, 1rem) * var(--text-scale));
     line-height: 1.5;
     max-width: 70vw;
     text-align: left;
@@ -135,7 +162,7 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     width: 100%;
     min-height: 100vh;
     box-sizing: border-box;

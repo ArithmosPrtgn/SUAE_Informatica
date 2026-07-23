@@ -92,6 +92,44 @@
     --invertedSurfaceColor: #f0eded;
 }
 
+/*Acessibilidade Alto Contraste*/
+body.a11y-high-contrast {
+    --accentColor: #ff1f1f !important;
+    --altAccentColor: #ff7a7a !important;
+    --infoColor: #1f7aff !important;
+    --altInfoColor: #7eb7ff !important;
+    --surfaceInfoColor: #1874ff !important;
+    --warningColor: #ff9800 !important;
+    --altWarningColor: #ffd180 !important;
+    --surfaceWarningColor: #ff9602 !important;
+    --tipColor: #b34dff !important;
+    --altTipColor: #ddb3ff !important;
+    --surfaceTipColor: #8400ff !important;
+    --criticalColor: #ff2d2d !important;
+    --altCriticalColor: #ff9d9d !important;
+    --surfaceCriticalColor: #ff0000 !important;
+    --exampleColor: #00d5b5 !important;
+    --altExampleColor: #8cffeb !important;
+    --surfaceExampleColor: #00ffdd !important;
+    --yesColor: #00d44a !important;
+    --altYesColor: #8cffae !important;
+    --surfaceYesColor: #00ff51 !important;
+    --questionColor: #d6ff00 !important;
+    --altQuestionColor: #efff99 !important;
+    --surfaceQuestionColor: #d9ff00 !important;
+    --bugColor: #b800ff !important;
+    --altBugColor: #e59cff !important;
+    --surfaceBugColor: #d000ff !important;
+    --mathColor: #00cfff !important;
+    --altMathColor: #9defff !important;
+    --surfaceMathColor: #00c8ff !important;
+    --nonAccentColor: #ffffff !important; 
+    --invertedNonAccentColor: #000000 !important; 
+    --surfaceColor: #e6e6e6 !important; 
+    --invertedSurfaceColor: #000000 !important;
+}
+
+
 .material-symbols-rounded {
     font-family: 'Material Symbols Rounded' !important;
     color: var(--nonAccentColor);
