@@ -1,0 +1,44 @@
+{
+    "tituloPrincipal": "Componentes Internos",
+    "iconeLoc": "/resources/ico/c/hardwares.svg",
+    "secao": [{
+            "nomeS": "Introdução",
+            "iconGMS": "play_arrow"
+        },{
+            "nomeS": "Placa mãe",
+            "subSections": [{
+                "nomeSS": "História da placa mãe" }, 
+            {   "nomeSS": "Tipos de placa mãe" }
+           ]
+        },{
+            "nomeS": "Memória RAM",
+            "subSections": [{
+                "nomeSS": "História da memória RAM" },
+            {   "nomeSS": "Tipos de memória RAM" }]
+        },{
+            "nomeS":"Memória de Armazenamento",
+            "subSections":[{
+                "nomeSS":"História da memória de armazenamento" },
+            {   "nomeSS":"Tipos de memória de armazenamento"  }]
+        },{
+            "nomeS": "Placas de Vídeo",
+            "subSections": [{
+                "nomeSS": "História da placa de vídeo" }, 
+            {   "nomeSS": "Tipos de placa de vídeo" }]
+        },{
+            "nomeS": "Processadores",
+            "subSections": [{
+                "nomeSS": "História dos processadores" }, 
+            {   "nomeSS": "Tipos de processadores" }]
+        },{
+            "nomeS":"Fonte de Alimentação"  
+        },{
+            "nomeS": "Dicas e Padrões",
+            "iconGMS": "lightbulb"
+        }, {
+            "nomeS": "Leitura Recomendada",
+            "iconGMS": "book"
+        }
+        
+    ]
+}
